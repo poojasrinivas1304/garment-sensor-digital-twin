@@ -1,0 +1,15 @@
+{
+  "final_gauge_length_mm": 79.96401367922905,
+  "nominal_coupon_strain": 0.020411630357958333,
+  "mean_conductive_gauge_strain": -0.00044982900963681517,
+  "strain_transfer_ratio": -0.02203787751140763,
+  "provisional_piezoresistive_beta": 4.0,
+  "predicted_delta_R_over_R0": -0.002695536963155165,
+  "manufacturer_bulk_R0_upper_bound_ohm": 122.89434002073871,
+  "warning": "Mechanical constants and electrical beta are provisional. The bulk-resistivity-derived R0 bound excludes printing anisotropy, interfaces, electrodes and contact resistance.",
+  "case_name": "arm_raise_sensor_contact_aware_s3_local_medium",
+  "mesh_level": "local_medium",
+  "material_case": "textile_fiber_balanced",
+  "node_count": 9305,
+  "element_count": 7632
+}

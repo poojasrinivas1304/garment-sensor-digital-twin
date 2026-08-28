@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "case_name": "fullfield_angle_plus_0_local_medium",
+      "loading_angle_deg": 0.0,
+      "exx": 0.3,
+      "eyy": -0.09,
+      "exy_tensor": 0.0,
+      "gamma_xy_engineering": 0.0,
+      "mean_conductive_gauge_strain": 0.012493516098653856,
+      "conductive_gauge_endpoint_engineering_strain": 0.012493516098653856,
+      "conductive_gauge_centroid_path_engineering_strain": 0.012855256654764165,
+      "strain_transfer_vs_major_strain": 0.04164505366217952,
+      "element_count": 7632,
+      "aligned_scalar_transfer": 0.04164505366217952,
+      "aligned_path_scalar_transfer": 0.042850855515880554,
+      "reduced_order_predicted_gauge_strain": 0.012493516098653856,
+      "reduced_order_predicted_path_strain": 0.012855256654764165,
+      "fullfield_minus_reduced_gauge_strain": 0.0
+    },
+    {
+      "case_name": "fullfield_angle_plus_60_local_medium",
+      "loading_angle_deg": 60.0,
+      "exx": 0.007500000000000034,
+      "eyy": 0.20249999999999996,
+      "exy_tensor": 0.16887495373796557,
+      "gamma_xy_engineering": 0.33774990747593114,
+      "mean_conductive_gauge_strain": -0.00015329153768579574,
+      "conductive_gauge_endpoint_engineering_strain": -0.00015329153768579574,
+      "conductive_gauge_centroid_path_engineering_strain": 0.0005180909381940577,
+      "strain_transfer_vs_major_strain": -0.0005109717922859859,
+      "element_count": 7632,
+      "aligned_scalar_transfer": 0.04164505366217952,
+      "aligned_path_scalar_transfer": 0.042850855515880554,
+      "reduced_order_predicted_gauge_strain": 0.00031233790246634784,
+      "reduced_order_predicted_path_strain": 0.0003213814163691056,
+      "fullfield_minus_reduced_gauge_strain": -0.0004656294401521436
+    },
+    {
+      "case_name": "fullfield_angle_minus_60_local_medium",
+      "loading_angle_deg": -60.0,
+      "exx": 0.007500000000000034,
+      "eyy": 0.20249999999999996,
+      "exy_tensor": -0.16887495373796557,
+      "gamma_xy_engineering": -0.33774990747593114,
+      "mean_conductive_gauge_strain": -0.0001537107587715525,
+      "conductive_gauge_endpoint_engineering_strain": -0.0001537107587715525,
+      "conductive_gauge_centroid_path_engineering_strain": 0.0005181203398739489,
+      "strain_transfer_vs_major_strain": -0.000512369195905175,
+      "element_count": 7632,
+      "aligned_scalar_transfer": 0.04164505366217952,
+      "aligned_path_scalar_transfer": 0.042850855515880554,
+      "reduced_order_predicted_gauge_strain": 0.00031233790246634784,
+      "reduced_order_predicted_path_strain": 0.0003213814163691056,
+      "fullfield_minus_reduced_gauge_strain": -0.0004660486612379003
+    }
+  ],
+  "plus_minus_60_symmetry_error_percent": 0.2731061562694187,
+  "interpretation": "selected full-field check of the reduced-order orientation screen; material remains isotropic",
+  "gauge_definition_audit": "endpoint-centroid and centroid-path engineering strains are reported; a sign claim is robust only if both agree"
+}

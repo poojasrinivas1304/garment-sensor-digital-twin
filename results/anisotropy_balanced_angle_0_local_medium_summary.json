@@ -1,0 +1,15 @@
+{
+  "final_gauge_length_mm": 80.6313467953,
+  "nominal_coupon_strain": 0.3,
+  "mean_conductive_gauge_strain": 0.007891834941250054,
+  "strain_transfer_ratio": 0.026306116470833515,
+  "provisional_piezoresistive_beta": 4.0,
+  "predicted_delta_R_over_R0": 0.048425017081833666,
+  "manufacturer_bulk_R0_upper_bound_ohm": 122.89434002073871,
+  "warning": "Mechanical constants and electrical beta are provisional. The bulk-resistivity-derived R0 bound excludes printing anisotropy, interfaces, electrodes and contact resistance.",
+  "case_name": "anisotropy_balanced_angle_0_local_medium",
+  "mesh_level": "local_medium",
+  "material_case": "textile_fiber_balanced",
+  "node_count": 9305,
+  "element_count": 7632
+}

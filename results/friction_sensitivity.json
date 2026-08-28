@@ -1,0 +1,216 @@
+{
+  "comparison": "formulation-matched sliding-node-on-facet, manual normal penalty 0.001, penalty-only enforcement, four segment updates, 25% movement",
+  "rows": [
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 1,
+      "movement_induced_strain_percent": -0.2860196476336199,
+      "contact_free_scaled_strain_percent": 0.28809052677694125,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 2,
+      "movement_induced_strain_percent": -0.28495418810965634,
+      "contact_free_scaled_strain_percent": 0.28809052677694114,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 3,
+      "movement_induced_strain_percent": -0.5609300921659288,
+      "contact_free_scaled_strain_percent": 1.2539999999896034,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 4,
+      "movement_induced_strain_percent": 0.13353775016844427,
+      "contact_free_scaled_strain_percent": 0.33125000000000004,
+      "sign_reversal_vs_contact_free": false,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 5,
+      "movement_induced_strain_percent": -0.038998812139690885,
+      "contact_free_scaled_strain_percent": 0.3311690686408836,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 6,
+      "movement_induced_strain_percent": -0.023138129986556046,
+      "contact_free_scaled_strain_percent": 0.4948026870717748,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 7,
+      "movement_induced_strain_percent": -0.015938264979981076,
+      "contact_free_scaled_strain_percent": 0.3135000000006535,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 8,
+      "movement_induced_strain_percent": -0.560820757546121,
+      "contact_free_scaled_strain_percent": 1.2539999999896034,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 9,
+      "movement_induced_strain_percent": 0.10529354322228535,
+      "contact_free_scaled_strain_percent": 0.5671070368414741,
+      "sign_reversal_vs_contact_free": false,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.0,
+      "sensor": 10,
+      "movement_induced_strain_percent": 0.10731878221221575,
+      "contact_free_scaled_strain_percent": 0.567107036841474,
+      "sign_reversal_vs_contact_free": false,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0_reference",
+      "movement_case": "garment_friction_n2f_mu0_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 1,
+      "movement_induced_strain_percent": -0.2904929971502993,
+      "contact_free_scaled_strain_percent": 0.28809052677694125,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 2,
+      "movement_induced_strain_percent": -0.2894663104105357,
+      "contact_free_scaled_strain_percent": 0.28809052677694114,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 3,
+      "movement_induced_strain_percent": -0.5514432308502126,
+      "contact_free_scaled_strain_percent": 1.2539999999896034,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 4,
+      "movement_induced_strain_percent": 0.1426515203959533,
+      "contact_free_scaled_strain_percent": 0.33125000000000004,
+      "sign_reversal_vs_contact_free": false,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 5,
+      "movement_induced_strain_percent": -0.03965944142114129,
+      "contact_free_scaled_strain_percent": 0.3311690686408836,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 6,
+      "movement_induced_strain_percent": -0.023546986041399372,
+      "contact_free_scaled_strain_percent": 0.4948026870717748,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 7,
+      "movement_induced_strain_percent": -0.016187516793791934,
+      "contact_free_scaled_strain_percent": 0.3135000000006535,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 8,
+      "movement_induced_strain_percent": -0.5513080587368435,
+      "contact_free_scaled_strain_percent": 1.2539999999896034,
+      "sign_reversal_vs_contact_free": true,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 9,
+      "movement_induced_strain_percent": 0.10797905855809203,
+      "contact_free_scaled_strain_percent": 0.5671070368414741,
+      "sign_reversal_vs_contact_free": false,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    },
+    {
+      "friction_coefficient": 0.1,
+      "sensor": 10,
+      "movement_induced_strain_percent": 0.10997047890234238,
+      "contact_free_scaled_strain_percent": 0.567107036841474,
+      "sign_reversal_vs_contact_free": false,
+      "active_contact_fraction": 0.9615384615384616,
+      "reference_case": "garment_friction_n2f_mu0p1_reference",
+      "movement_case": "garment_friction_n2f_mu0p1_kt0p1_025"
+    }
+  ],
+  "s3_s8_reversal_persisted_at_mu_0_and_0p1": true,
+  "failed_high_friction_trials_not_used_as_results": [
+    {
+      "case": "garment_friction_n2f_mu0p3_kt0p1_025",
+      "normal_termination": false
+    },
+    {
+      "case": "garment_friction_n2f_mu0p3_fp0p1_kt0p01_025",
+      "normal_termination": false
+    }
+  ]
+}

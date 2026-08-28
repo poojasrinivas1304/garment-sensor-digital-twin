@@ -1,0 +1,180 @@
+{
+  "case": "garment_both_arms_raise_050",
+  "status": "illustrative boundary-driven bilateral-arm-raise movement; not calibrated human motion",
+  "febio_normal_termination": true,
+  "movement": {
+    "time_steps": 50,
+    "step_size": 0.02,
+    "staged_loading": false,
+    "contact_stage_fraction": null,
+    "movement": "both_arms_raise",
+    "movement_stage_fraction": 0.5,
+    "movement_scale": 0.5,
+    "movement_boundary": "upper garment ring driven by compatible both-arms-raise field"
+  },
+  "mesh_quality": {
+    "final_surface_inverted_triangles": 0,
+    "minimum_signed_triangle_area_ratio": 0.9706353224631611
+  },
+  "solver_path": {
+    "rejected_negative_jacobian_trials": 0,
+    "maximum_negative_jacobians_in_rejected_trial": 0
+  },
+  "contact": {
+    "sampling": "FEBio face_data on each primary garment contact facet at the accepted final state",
+    "active_definition": "reported contact pressure > 1e-12 MPa",
+    "active_facets": 1068,
+    "active_facet_fraction": 0.6418269230769231,
+    "pressure_kPa_active_mean": 0.013368353396638513,
+    "pressure_kPa_active_max": 0.08390343203890001,
+    "maximum_absolute_active_gap_mm": 0.089469580127,
+    "signed_active_gap_mm_range": [
+      -0.089469580127,
+      0.00198617199214
+    ],
+    "active_facets_with_negative_gap": 988,
+    "active_facets_with_positive_gap": 80,
+    "absolute_active_gap_mm_median": 0.001732757387265,
+    "absolute_active_gap_mm_95th_percentile": 0.020171813804275,
+    "active_facets_above_0p01_mm_gap": 216,
+    "pressure_gap_zero_intercept_slope_MPa_per_mm": -0.0007489841867716561,
+    "pressure_gap_pearson_r": -0.14819871468456458
+  },
+  "kinematics": {
+    "maximum_displacement_mm": 19.78991220293815,
+    "maximum_vertical_displacement_mm": 19.5,
+    "minimum_vertical_displacement_mm": 10.725000000000023
+  },
+  "sensor_strains": [
+    {
+      "sensor": 1,
+      "panel": "front",
+      "theta_deg": 219.6,
+      "height_mm": 500.5,
+      "sensor_angle_deg": 15.0,
+      "element_theta_index": 39,
+      "element_z_index": 20,
+      "green_strain_circumferential": 0.000745630899541494,
+      "green_strain_vertical": 0.0014619373008126768,
+      "green_shear_tensor_component": -0.009049234540057266,
+      "projected_sensor_axis_green_strain": -0.0037310029400486736
+    },
+    {
+      "sensor": 2,
+      "panel": "front",
+      "theta_deg": 320.40000000000003,
+      "height_mm": 500.5,
+      "sensor_angle_deg": 165.0,
+      "element_theta_index": 56,
+      "element_z_index": 20,
+      "green_strain_circumferential": 0.0007456315846589012,
+      "green_strain_vertical": 0.0014619361101274597,
+      "green_shear_tensor_component": 0.00904923277996764,
+      "projected_sensor_axis_green_strain": -0.003731001500541408
+    },
+    {
+      "sensor": 3,
+      "panel": "front",
+      "theta_deg": 270.0,
+      "height_mm": 494.0,
+      "sensor_angle_deg": 90.0,
+      "element_theta_index": 48,
+      "element_z_index": 19,
+      "green_strain_circumferential": 0.00746438384601289,
+      "green_strain_vertical": -0.011450811442516806,
+      "green_shear_tensor_component": 0.0008609731336106984,
+      "projected_sensor_axis_green_strain": -0.011450811442516806
+    },
+    {
+      "sensor": 4,
+      "panel": "front",
+      "theta_deg": 270.0,
+      "height_mm": 344.5,
+      "sensor_angle_deg": 0.0,
+      "element_theta_index": 48,
+      "element_z_index": 13,
+      "green_strain_circumferential": 0.0038881393286599453,
+      "green_strain_vertical": -0.003943737458309726,
+      "green_shear_tensor_component": 0.0003320514812268868,
+      "projected_sensor_axis_green_strain": 0.0038881393286599453
+    },
+    {
+      "sensor": 5,
+      "panel": "front",
+      "theta_deg": 226.79999999999998,
+      "height_mm": 195.0,
+      "sensor_angle_deg": 55.0,
+      "element_theta_index": 40,
+      "element_z_index": 7,
+      "green_strain_circumferential": 0.0006629461988063579,
+      "green_strain_vertical": -0.00016793927920333296,
+      "green_shear_tensor_component": -0.0009027255566773416,
+      "projected_sensor_axis_green_strain": -0.0007428708695410824
+    },
+    {
+      "sensor": 6,
+      "panel": "front",
+      "theta_deg": 313.2,
+      "height_mm": 195.0,
+      "sensor_angle_deg": 105.0,
+      "element_theta_index": 55,
+      "element_z_index": 7,
+      "green_strain_circumferential": 0.0006629444317591826,
+      "green_strain_vertical": -0.00016793895785266466,
+      "green_shear_tensor_component": 0.0009027256923635769,
+      "projected_sensor_axis_green_strain": -0.0005636431707217212
+    },
+    {
+      "sensor": 7,
+      "panel": "front",
+      "theta_deg": 270.0,
+      "height_mm": 123.5,
+      "sensor_angle_deg": 90.0,
+      "element_theta_index": 48,
+      "element_z_index": 4,
+      "green_strain_circumferential": 0.0009290484817844336,
+      "green_strain_vertical": -0.00047076319099387254,
+      "green_shear_tensor_component": 4.4197492687526306e-05,
+      "projected_sensor_axis_green_strain": -0.00047076319099387254
+    },
+    {
+      "sensor": 8,
+      "panel": "back",
+      "theta_deg": 90.0,
+      "height_mm": 494.0,
+      "sensor_angle_deg": 90.0,
+      "element_theta_index": 16,
+      "element_z_index": 19,
+      "green_strain_circumferential": 0.007464386153256841,
+      "green_strain_vertical": -0.011450811184852638,
+      "green_shear_tensor_component": 0.0008609768466979862,
+      "projected_sensor_axis_green_strain": -0.011450811184852638
+    },
+    {
+      "sensor": 9,
+      "panel": "back",
+      "theta_deg": 46.800000000000004,
+      "height_mm": 338.0,
+      "sensor_angle_deg": 160.0,
+      "element_theta_index": 8,
+      "element_z_index": 13,
+      "green_strain_circumferential": 0.0015311670947106837,
+      "green_strain_vertical": -0.0005824593632045016,
+      "green_shear_tensor_component": -0.0032976492789581827,
+      "projected_sensor_axis_green_strain": 0.00340360786481675
+    },
+    {
+      "sensor": 10,
+      "panel": "back",
+      "theta_deg": 133.20000000000002,
+      "height_mm": 338.0,
+      "sensor_angle_deg": 20.0,
+      "element_theta_index": 23,
+      "element_z_index": 13,
+      "green_strain_circumferential": 0.0015311693596038456,
+      "green_strain_vertical": -0.0005824604584363513,
+      "green_shear_tensor_component": 0.003297649593036731,
+      "projected_sensor_axis_green_strain": 0.0034036099385357514
+    }
+  ]
+}

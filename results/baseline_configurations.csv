@@ -1,0 +1,7 @@
+case_name,conductive_gauge_end_to_end_strain_percent,element_count,material_case,mesh_level,normal_termination,role,taper_length_mm,tip_thickness_fraction,transfer_ratio_percent
+geometry_sensor_length_80,0.9618530433125017,264,literature_nominal,coarse,True,global coarse OFAT geometry-screen baseline,0.0,1.0,3.206176811041672
+geometry_verify_baseline_medium,0.812823796815465,1920,literature_nominal,medium,True,global medium geometry verification,0.0,1.0,2.7094126560515503
+local_mesh_coarse,0.8611538396666418,1328,literature_nominal,local_coarse,True,locally refined abrupt reference,0.0,1.0,2.8705127988888064
+local_mesh_medium,0.7501293104754936,7632,literature_nominal,local_medium,True,production locally refined abrupt reference,0.0,1.0,2.5004310349183116
+taper_5mm_local_medium,0.9895403532177837,7632,literature_nominal,local_medium,True,5 mm taper screening case,5.0,0.25,3.2984678440592794
+taper_10mm_local_medium,1.0455551440168342,7632,literature_nominal,local_medium,True,10 mm taper screening case,10.0,0.25,3.4851838133894484

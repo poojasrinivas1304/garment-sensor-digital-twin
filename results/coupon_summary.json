@@ -1,0 +1,9 @@
+{
+  "final_gauge_length_mm": 99.41465052119999,
+  "nominal_coupon_strain": 0.3,
+  "mean_conductive_gauge_strain": 0.24268313151499984,
+  "strain_transfer_ratio": 0.8089437717166662,
+  "provisional_piezoresistive_beta": 4.0,
+  "predicted_delta_R_over_R0": 3.07666087936697,
+  "warning": "Material constants and electrical beta are provisional verification assumptions."
+}

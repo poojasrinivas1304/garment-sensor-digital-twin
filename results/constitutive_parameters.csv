@@ -1,0 +1,64 @@
+bulk_modulus_MPa,compressibility,density,domain,fiber_c3_MPa,fiber_c4,fiber_dispersion,fiber_transition_stretch,fiber_x_c5_MPa,fiber_x_direction,fiber_y_c5_MPa,fiber_y_direction,law,material_case,matrix_c1_MPa,matrix_c2_MPa,poisson_ratio,shear_modulus_MPa,young_modulus_MPa
+16.66666666666667,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,provisional,,,0.45,1.7241379310344829,5.0
+26.66666666666667,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,provisional,,,0.45,2.7586206896551726,8.0
+50.000000000000014,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,provisional,,,0.45,5.172413793103448,15.0
+0.2666666666666666,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,literature_nominal,,,0.35,0.08888888888888888,0.24
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,literature_nominal,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,literature_nominal,,,0.45,15.517241379310345,45.0
+0.13333333333333333,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,textile_nu_low,,,0.2,0.1,0.24
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_nu_low,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_nu_low,,,0.45,15.517241379310345,45.0
+0.8000000000000002,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,textile_nu_high,,,0.45,0.08275862068965517,0.24
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_nu_high,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_nu_high,,,0.45,15.517241379310345,45.0
+0.2666666666666666,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,tpu_nu_low,,,0.35,0.08888888888888888,0.24
+80.66666666666669,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,tpu_nu_low,,,0.4,17.285714285714285,48.4
+75.00000000000001,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,tpu_nu_low,,,0.4,16.071428571428573,45.0
+0.2666666666666666,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,tpu_nu_high,,,0.35,0.08888888888888888,0.24
+403.333333333333,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,tpu_nu_high,,,0.48,16.35135135135135,48.4
+374.99999999999966,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,tpu_nu_high,,,0.48,15.202702702702704,45.0
+0.1111111111111111,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,nylon_low,,,0.35,0.037037037037037035,0.1
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,nylon_low,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,nylon_low,,,0.45,15.517241379310345,45.0
+5.5555555555555545,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,nylon_high,,,0.35,1.8518518518518516,5.0
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,nylon_high,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,nylon_high,,,0.45,15.517241379310345,45.0
+0.2666666666666666,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,backing_low,,,0.35,0.08888888888888888,0.24
+104.66666666666669,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,backing_low,,,0.45,10.827586206896552,31.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,backing_low,,,0.45,15.517241379310345,45.0
+0.2666666666666666,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,backing_high,,,0.35,0.08888888888888888,0.24
+223.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,backing_high,,,0.45,23.10344827586207,67.0
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,backing_high,,,0.45,15.517241379310345,45.0
+0.2666666666666666,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,conductive_low,,,0.35,0.08888888888888888,0.24
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,conductive_low,,,0.45,16.689655172413794,48.4
+40.00000000000001,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,conductive_low,,,0.45,4.137931034482759,12.0
+0.2666666666666666,compressible; derived from E and nu,not used (quasi-static analysis),nylon,,,,,,,,,compressible neo-Hookean,conductive_high,,,0.35,0.08888888888888888,0.24
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,conductive_high,,,0.45,16.689655172413794,48.4
+300.00000000000006,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,conductive_high,,,0.45,31.03448275862069,90.0
+2.4,finite bulk penalty k,not used (quasi-static analysis),nylon,0.0,8.0,none; perfectly aligned families,1.05,0.2,"(1,0,0)",0.2,"(0,1,0)",uncoupled solid mixture: Mooney-Rivlin matrix + two uncoupled exp-linear fibres,textile_fiber_balanced,0.01,0.0,,,
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_balanced,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_balanced,,,0.45,15.517241379310345,45.0
+1.2,finite bulk penalty k,not used (quasi-static analysis),nylon,0.0,8.0,none; perfectly aligned families,1.05,0.2,"(1,0,0)",0.2,"(0,1,0)",uncoupled solid mixture: Mooney-Rivlin matrix + two uncoupled exp-linear fibres,textile_fiber_bulk_low,0.01,0.0,,,
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_bulk_low,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_bulk_low,,,0.45,15.517241379310345,45.0
+4.8,finite bulk penalty k,not used (quasi-static analysis),nylon,0.0,8.0,none; perfectly aligned families,1.05,0.2,"(1,0,0)",0.2,"(0,1,0)",uncoupled solid mixture: Mooney-Rivlin matrix + two uncoupled exp-linear fibres,textile_fiber_bulk_high,0.01,0.0,,,
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_bulk_high,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_bulk_high,,,0.45,15.517241379310345,45.0
+2.4,finite bulk penalty k,not used (quasi-static analysis),nylon,0.0,4.0,none; perfectly aligned families,1.05,0.2,"(1,0,0)",0.2,"(0,1,0)",uncoupled solid mixture: Mooney-Rivlin matrix + two uncoupled exp-linear fibres,textile_fiber_c4_low,0.01,0.0,,,
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_c4_low,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_c4_low,,,0.45,15.517241379310345,45.0
+2.4,finite bulk penalty k,not used (quasi-static analysis),nylon,0.0,12.0,none; perfectly aligned families,1.05,0.2,"(1,0,0)",0.2,"(0,1,0)",uncoupled solid mixture: Mooney-Rivlin matrix + two uncoupled exp-linear fibres,textile_fiber_c4_high,0.01,0.0,,,
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_c4_high,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_c4_high,,,0.45,15.517241379310345,45.0
+2.4,finite bulk penalty k,not used (quasi-static analysis),nylon,0.0,8.0,none; perfectly aligned families,1.02,0.2,"(1,0,0)",0.2,"(0,1,0)",uncoupled solid mixture: Mooney-Rivlin matrix + two uncoupled exp-linear fibres,textile_fiber_transition_low,0.01,0.0,,,
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_transition_low,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_transition_low,,,0.45,15.517241379310345,45.0
+2.4,finite bulk penalty k,not used (quasi-static analysis),nylon,0.0,8.0,none; perfectly aligned families,1.08,0.2,"(1,0,0)",0.2,"(0,1,0)",uncoupled solid mixture: Mooney-Rivlin matrix + two uncoupled exp-linear fibres,textile_fiber_transition_high,0.01,0.0,,,
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_transition_high,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_transition_high,,,0.45,15.517241379310345,45.0
+2.4,finite bulk penalty k,not used (quasi-static analysis),nylon,0.0,8.0,none; perfectly aligned families,1.05,0.3,"(1,0,0)",0.1,"(0,1,0)",uncoupled solid mixture: Mooney-Rivlin matrix + two uncoupled exp-linear fibres,textile_fiber_x3,0.01,0.0,,,
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_x3,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_x3,,,0.45,15.517241379310345,45.0
+2.4,finite bulk penalty k,not used (quasi-static analysis),nylon,0.0,8.0,none; perfectly aligned families,1.05,0.1,"(1,0,0)",0.3,"(0,1,0)",uncoupled solid mixture: Mooney-Rivlin matrix + two uncoupled exp-linear fibres,textile_fiber_y3,0.01,0.0,,,
+161.33333333333337,compressible; derived from E and nu,not used (quasi-static analysis),backing_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_y3,,,0.45,16.689655172413794,48.4
+150.00000000000003,compressible; derived from E and nu,not used (quasi-static analysis),conductive_tpu,,,,,,,,,compressible neo-Hookean,textile_fiber_y3,,,0.45,15.517241379310345,45.0
