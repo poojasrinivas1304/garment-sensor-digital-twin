@@ -1,0 +1,58 @@
+{
+  "status": "canonical ten-sensor geometry digitized from manuscript Figure 2 and displayed on a photograph-scaled shirt outline",
+  "photographic_geometry": {
+    "source_images": "IMG_9722.HEIC through IMG_9729.HEIC, acquired 2026-08-28",
+    "scale_reference": "flexible tape aligned from shoulder seam to bottom hem",
+    "shoulder_to_hem_mm": 720.0,
+    "shoulder_to_hem_uncertainty_mm": 10.0,
+    "approximate_chest_panel_width_mm": 540.0,
+    "chest_width_uncertainty_mm": 30.0,
+    "transverse_measurement_note": "No horizontal tape measurement was supplied; chest width is a perspective-corrected photographic estimate and is used only for visualization.",
+    "prototype_sensor_note": "The photographed prototype displays four front and two back strips. Their count and locations do not replace the canonical seven-front/three-back design used in the simulations."
+  },
+  "coordinate_system": {
+    "x": "image horizontal coordinate, -0.5 at left panel edge and +0.5 at right panel edge",
+    "y": "vertical coordinate, 0 at hem and 1 at shoulder line",
+    "angle_deg": "counter-clockwise from image horizontal"
+  },
+  "sensor_dimensions_mm": {
+    "length": 80.0,
+    "width": 15.0,
+    "backing_thickness": 0.4,
+    "conductive_thickness": 0.6
+  },
+  "sensors": [
+    {"sensor": 1, "panel": "front", "x": -0.28, "y": 0.77, "angle_deg": 15.0},
+    {"sensor": 2, "panel": "front", "x": 0.28, "y": 0.77, "angle_deg": 165.0},
+    {"sensor": 3, "panel": "front", "x": 0.00, "y": 0.76, "angle_deg": 90.0},
+    {"sensor": 4, "panel": "front", "x": 0.00, "y": 0.53, "angle_deg": 0.0},
+    {"sensor": 5, "panel": "front", "x": -0.24, "y": 0.30, "angle_deg": 55.0},
+    {"sensor": 6, "panel": "front", "x": 0.24, "y": 0.30, "angle_deg": 105.0},
+    {"sensor": 7, "panel": "front", "x": 0.00, "y": 0.19, "angle_deg": 90.0},
+    {"sensor": 8, "panel": "back", "x": 0.00, "y": 0.76, "angle_deg": 90.0},
+    {"sensor": 9, "panel": "back", "x": -0.24, "y": 0.52, "angle_deg": 160.0},
+    {"sensor": 10, "panel": "back", "x": 0.24, "y": 0.52, "angle_deg": 20.0}
+  ],
+  "mapping_conflict": {
+    "status": "resolved_for_project",
+    "decision": "Figure 2 numbering is the canonical numbering for all simulations, figures, tables and future manuscript text.",
+    "description": "The earlier manuscript Table 1 is superseded because its location names do not match the visible numbering in Figure 2.",
+    "superseded_table_1": {
+      "1": "center chest", "2": "right chest", "3": "left chest",
+      "4": "horizontal torso", "5": "right torso", "6": "lower center torso",
+      "7": "left torso", "8": "left back", "9": "center back", "10": "right back"
+    },
+    "canonical_mapping": {
+      "1": "front image-left upper chest, diagonal",
+      "2": "front image-right upper chest, mirrored diagonal",
+      "3": "front upper center chest, vertical",
+      "4": "front central torso, horizontal",
+      "5": "front image-left lower torso, steep diagonal",
+      "6": "front image-right lower torso, mirrored steep diagonal",
+      "7": "front lower center torso, vertical",
+      "8": "back upper center, vertical",
+      "9": "back image-left mid-back, diagonal",
+      "10": "back image-right mid-back, mirrored diagonal"
+    }
+  }
+}
