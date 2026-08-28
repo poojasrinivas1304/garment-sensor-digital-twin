@@ -1,0 +1,50 @@
+{
+  "units": {
+    "length": "mm",
+    "stress": "MPa"
+  },
+  "nominal_coupon_length_mm": 120.0,
+  "prescribed_displacement_mm": 36.0,
+  "initial_gauge_length_mm": 80.0,
+  "gauge_left_node_ids": [
+    391,
+    394,
+    410,
+    419,
+    427,
+    430,
+    446,
+    455
+  ],
+  "gauge_right_node_ids": [
+    407,
+    408,
+    417,
+    426,
+    443,
+    444,
+    453,
+    462
+  ],
+  "node_count": 462,
+  "element_count": 264,
+  "element_count_by_domain": {
+    "nylon_substrate": 216,
+    "tpu_backing": 24,
+    "conductive_tpu": 24
+  },
+  "provisional_materials": {
+    "nylon": {
+      "E_MPa": 5.0,
+      "nu": 0.45
+    },
+    "backing_tpu": {
+      "E_MPa": 8.0,
+      "nu": 0.45
+    },
+    "conductive_tpu": {
+      "E_MPa": 15.0,
+      "nu": 0.45
+    }
+  }
+}
