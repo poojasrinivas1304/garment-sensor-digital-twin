@@ -1,0 +1,57 @@
+{
+  "case": "garment_fit_tensile_00670bp",
+  "status": "prestrained fitted-contact verification; not calibrated garment mechanics",
+  "units": "mm, MPa, N",
+  "shirt": {
+    "photograph_scaled_flat_chest_width_mm": 540.0,
+    "modelled_body_panel_length_mm": 650.0,
+    "ellipse_radii_mm": [
+      189.63,
+      166.62
+    ],
+    "shell_thickness_mm": 1.6,
+    "material": {
+      "type": "prestrain elastic / neo-Hookean",
+      "E_MPa": 0.8,
+      "v": 0.3,
+      "in_plane_prestrain_gradient": 1.0067
+    },
+    "front_and_back_domains_share_side_seam_nodes": true
+  },
+  "torso": {
+    "type": "fully fixed high-stiffness elliptical shell",
+    "ellipse_radii_mm": [
+      188.0,
+      165.0
+    ],
+    "material": {
+      "type": "neo-Hookean",
+      "E_MPa": 1000.0,
+      "v": 0.3
+    }
+  },
+  "mesh": {
+    "circumferential_divisions": 64,
+    "vertical_divisions": 26,
+    "shirt_shell_elements": 1664,
+    "torso_rigid_shell_elements": 1664
+  },
+  "contact": {
+    "type": "sliding-facet-on-facet",
+    "shirt_is_primary": true,
+    "rigid_torso_is_secondary": true,
+    "shirt_bottom_surface_used": false,
+    "primary_surface_connectivity_reversed_to_inward_face": true,
+    "friction": "not included in equilibrium verification",
+    "negative_ease_representation": "in-plane prestrain gradient",
+    "regularizing_external_fit_pressure_MPa": 2e-05,
+    "augmented_lagrangian": true,
+    "augmentation_tolerance": 0.25,
+    "maximum_augmentations": 3,
+    "penalty_scale": 0.5
+  },
+  "control": {
+    "time_steps": 1,
+    "step_size": 1.0
+  }
+}
