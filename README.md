@@ -66,32 +66,52 @@ garments, wearers or movements without matched analyses.
 
 ## Reproducibility Archive
 
-The complete frozen bundle is attached to repository release **v1.0.0** as:
-
-```text
-Supplementary_Data_1_reproducibility.zip
-```
+This paper-only archive contains the computational cases and utilities that
+support the manuscript and its supplementary information. Invalid exploratory
+60-mm cases, superseded plot variants and manuscript-formatting utilities have
+been removed. Every retained numerical claim is mapped in
+`claim_to_file_manifest.csv`; every deliberate exclusion is recorded in
+`excluded_files.csv`.
 
 Archive contents:
 
 ```text
-Supplementary_Data_1_reproducibility/
+paper_reproducibility_archive/
 ├── README.md
-├── model/          # FEBio .feb inputs and model metadata
+├── claim_to_file_manifest.csv
+├── excluded_files.csv
+├── file_inventory_sha256.csv
+├── figures/        # Thirteen final manuscript figure files
+├── model/          # 206 FEBio inputs + 206 matched metadata records
 ├── references/     # Material basis and sensor-layout records
-├── results/        # JSON/CSV outputs, case manifest and audit tables
-└── scripts/        # Model generation, execution, post-processing and plots
+├── results/        # Frozen outputs, audit tables and four plot-source logs
+└── scripts/        # Retained generation, execution, processing and final plots
 ```
 
-The archive contains **731 files**. Its SHA-256 digest is:
+The archive contains **206 indexed simulation cases**. The `model/` directory
+therefore contains 412 files: one FEBio input and one metadata record per case.
+The remaining files are processed outputs, aggregate tables, reference records
+and analysis utilities rather than additional simulations.
 
-```text
-8144ca536f1cab21a346b4941ef285ddca2d43d4f6cc94c40e01efb251c317ba
-```
+| Content | Files | Interpretation |
+|---|---:|---|
+| FEBio inputs | 206 | Accepted indexed simulation cases |
+| Model metadata | 206 | One record per accepted case |
+| Results | 230 | JSON/CSV outputs plus four required solver logs |
+| Scripts | 46 | Generation, execution, processing, audits and final plots |
+| References | 4 | Material and layout provenance |
+| Final figures | 13 | Exact JPEG files used by the manuscript |
+| Root documentation/manifests | 4 | README and three machine-readable audit files |
 
-Large raw solver logs and FEBio plot files are not included in the compact
-bundle. They are retained by the authors and are available on reasonable
-request.
+The archive contains 709 files in total. This is an artifact count, not a
+simulation count. `file_inventory_sha256.csv` records the size and SHA-256
+digest of every other file in the archive.
+
+Four solver logs required to reconstruct manuscript Figures 10 and 12 are
+included. The other raw solver logs and FEBio plot files exceed the practical
+size of the review bundle; their termination and diagnostic summaries are
+frozen in `case_manifest.csv`, and the raw files are retained by the authors
+for provision on reasonable request.
 
 ---
 
@@ -112,7 +132,7 @@ scripts without changing the model parameters.
 
 ## Reproducing the Analysis
 
-After extracting the v1.0.0 archive, the principal deterministic drivers are:
+After extracting the archive, the principal deterministic drivers are:
 
 ```bash
 python3 scripts/run_geometry_screening.py
@@ -132,7 +152,26 @@ python3 scripts/build_reproducibility_tables.py
 
 Each simulation driver writes the exact FEBio input before execution and
 retains model metadata and processed JSON/CSV output. The machine-readable case
-manifest is the authoritative map between reported values and model files.
+manifest maps the 206 accepted cases to their model files. The separate
+claim-to-file manifest maps manuscript figures, tables and supplementary
+sections to the relevant data and scripts.
+
+Create the output directory and use a noninteractive Matplotlib backend when
+regenerating figures:
+
+```bash
+mkdir -p figures
+export MPLBACKEND=Agg
+```
+
+The final submitted visual variants for Figures 10--13 are produced by:
+
+```bash
+python3 scripts/plot_contact_verification_publication_v2.py
+python3 scripts/plot_matched_garment_controls_publication.py
+python3 scripts/plot_full_garment_reversal_field_publication.py
+python3 scripts/plot_relative_F_sensor_mesh_trajectory.py
+```
 
 ---
 
@@ -152,9 +191,9 @@ manifest is the authoritative map between reported values and model files.
 
 ## Data Access
 
-The repository is private during manuscript review. The reproducibility archive
-and retained solver records are available from the corresponding authors on
-reasonable request. Repository access may be opened after publication.
+The repository is private during manuscript review. This paper-only archive and
+the retained full solver records are available from the corresponding authors
+on reasonable request. Repository access may be opened after publication.
 
 ---
 

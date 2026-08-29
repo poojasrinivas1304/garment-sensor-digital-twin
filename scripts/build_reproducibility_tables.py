@@ -88,6 +88,13 @@ def constitutive_parameters() -> list[dict]:
 
 def case_manifest() -> list[dict]:
     rows = []
+    existing_rows: dict[str, dict] = {}
+    existing_manifest = RESULTS / "case_manifest.csv"
+    if existing_manifest.exists():
+        with existing_manifest.open(newline="") as handle:
+            existing_rows = {
+                row["case_name"]: row for row in csv.DictReader(handle)
+            }
     for metadata_path in sorted(MODEL.glob("*_metadata.json")):
         try:
             metadata = json.loads(metadata_path.read_text())
@@ -103,6 +110,7 @@ def case_manifest() -> list[dict]:
         if not model_path.exists():
             continue
         log_path = RESULTS / f"{case_name}.log"
+        previous = existing_rows.get(case_name, {})
         normal_termination = False
         negative_counts: list[int] = []
         if log_path.exists():
@@ -114,6 +122,8 @@ def case_manifest() -> list[dict]:
                         match = re.search(r"(\d+) negative jacobians detected", line)
                         if match:
                             negative_counts.append(int(match.group(1)))
+        else:
+            normal_termination = previous.get("normal_termination") == "True"
         summary_candidates = (
             RESULTS / f"{case_name}_summary.json",
             RESULTS / f"{case_name}_movement_summary.json",
@@ -125,6 +135,14 @@ def case_manifest() -> list[dict]:
                 "model_file": f"model/{case_name}.feb",
                 "metadata_file": f"model/{metadata_path.name}",
                 "log_file": f"results/{case_name}.log" if log_path.exists() else "",
+                "raw_log_status": (
+                    "included"
+                    if log_path.exists()
+                    else previous.get(
+                        "raw_log_status",
+                        "retained by authors; available on reasonable request",
+                    )
+                ),
                 "summary_file": (
                     f"results/{summary_path.name}" if summary_path is not None else ""
                 ),
@@ -133,9 +151,15 @@ def case_manifest() -> list[dict]:
                 "node_count": metadata.get("node_count", ""),
                 "element_count": metadata.get("element_count", ""),
                 "normal_termination": normal_termination,
-                "negative_jacobian_trial_messages": len(negative_counts),
+                "negative_jacobian_trial_messages": (
+                    len(negative_counts)
+                    if log_path.exists()
+                    else previous.get("negative_jacobian_trial_messages", 0)
+                ),
                 "maximum_trial_negative_jacobians": (
-                    max(negative_counts) if negative_counts else 0
+                    max(negative_counts)
+                    if negative_counts
+                    else previous.get("maximum_trial_negative_jacobians", 0)
                 ),
                 "time_steps": metadata.get("time_steps", ""),
                 "maximum_time_step": metadata.get("maximum_time_step", ""),
@@ -224,12 +248,23 @@ def software_versions() -> dict:
 def main() -> None:
     write_csv(RESULTS / "constitutive_parameters.csv", constitutive_parameters())
     write_csv(RESULTS / "case_manifest.csv", case_manifest())
-    write_csv(RESULTS / "geometry_screening_complete.csv", geometry_screen_complete())
-    write_csv(RESULTS / "baseline_configurations.csv", baseline_configurations())
-    (RESULTS / "software_versions.json").write_text(
+    # The compact review archive intentionally omits most raw solver logs.
+    # Preserve the frozen, audited tables when their source logs are not part
+    # of the compact bundle; the complete logs remain available on request.
+    for output_name, builder in (
+        ("geometry_screening_complete.csv", geometry_screen_complete),
+        ("baseline_configurations.csv", baseline_configurations),
+    ):
+        try:
+            write_csv(RESULTS / output_name, builder())
+        except FileNotFoundError as exc:
+            print(f"Preserved frozen {output_name}; missing retained raw log: {exc.filename}")
+    # Keep the frozen audited environment record unchanged. A later user can
+    # write their local runtime alongside it for comparison.
+    (RESULTS / "software_versions_runtime_check.json").write_text(
         json.dumps(software_versions(), indent=2) + "\n"
     )
-    print("Wrote constitutive parameters, case manifest, geometry table, baselines and versions")
+    print("Wrote constitutive parameters, case manifest and runtime check")
 
 
 if __name__ == "__main__":
