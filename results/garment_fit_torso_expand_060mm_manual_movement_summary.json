@@ -1,0 +1,557 @@
+{
+  "case": "garment_fit_torso_expand_060mm_manual",
+  "status": "fitted-contact reference state used for movement-strain subtraction",
+  "febio_normal_termination": true,
+  "movement": {
+    "time_steps": 20,
+    "step_size": 0.05,
+    "staged_loading": false,
+    "contact_stage_fraction": null
+  },
+  "mesh_quality": {
+    "final_surface_inverted_triangles": 0,
+    "minimum_signed_triangle_area_ratio": 1.0003761436299323
+  },
+  "solver_path": {
+    "rejected_negative_jacobian_trials": 3,
+    "maximum_negative_jacobians_in_rejected_trial": 56
+  },
+  "contact": {
+    "enabled": true,
+    "sampling": "FEBio face_data on each primary garment contact facet at the accepted final state",
+    "active_definition": "reported contact pressure > 1e-12 MPa",
+    "active_facets": 1664,
+    "active_facet_fraction": 1.0,
+    "pressure_kPa_active_mean": 0.003984194857378587,
+    "pressure_kPa_active_max": 0.0048197600886,
+    "maximum_absolute_active_gap_mm": 0.0048197600886,
+    "signed_active_gap_mm_range": [
+      0.00327174005931,
+      0.0048197600886
+    ],
+    "active_facets_with_negative_gap": 0,
+    "active_facets_with_positive_gap": 1664,
+    "absolute_active_gap_mm_median": 0.00392387916974,
+    "absolute_active_gap_mm_95th_percentile": 0.004818248305584,
+    "active_facets_above_0p01_mm_gap": 0,
+    "pressure_gap_zero_intercept_slope_MPa_per_mm": 0.0009999999999999998,
+    "pressure_gap_pearson_r": 0.9999999999999998
+  },
+  "kinematics": {
+    "maximum_displacement_mm": 0.14430709659478638,
+    "maximum_vertical_displacement_mm": 0.107180535043,
+    "minimum_vertical_displacement_mm": 0.0
+  },
+  "sensor_strains": [
+    {
+      "sensor": 1,
+      "panel": "front",
+      "theta_deg": 219.6,
+      "height_mm": 500.5,
+      "sensor_angle_deg": 15.0,
+      "element_theta_index": 39,
+      "element_z_index": 20,
+      "green_strain_circumferential": 0.0005429594809571725,
+      "green_strain_vertical": -0.00016480047816302967,
+      "green_shear_tensor_component": -5.1475321420218535e-09,
+      "projected_sensor_axis_green_strain": 0.0004955459798207658,
+      "deformation_gradient_garment_basis": [
+        [
+          1.0005428103198535,
+          -4.347224796716339e-09,
+          -6.062320660970272e-05
+        ],
+        [
+          -5.946478745962103e-09,
+          0.9998351859399998,
+          -3.1213536461687703e-10
+        ],
+        [
+          6.06561136231587e-05,
+          3.1182037818613137e-10,
+          0.9999999981624133
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          1.000495405901146,
+          -0.0001769097526407949,
+          -5.855760172334702e-05
+        ],
+        [
+          -0.00017691135189477382,
+          0.9998825903587073,
+          1.56901389461661e-05
+        ],
+        [
+          5.858938737598571e-05,
+          -1.5698656212219482e-05,
+          0.9999999981624133
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.00399828640028,
+      "local_contact_pressure_kPa": 0.00399828640028,
+      "local_contact_active": true
+    },
+    {
+      "sensor": 2,
+      "panel": "front",
+      "theta_deg": 320.40000000000003,
+      "height_mm": 500.5,
+      "sensor_angle_deg": 165.0,
+      "element_theta_index": 56,
+      "element_z_index": 20,
+      "green_strain_circumferential": 0.000542959480959615,
+      "green_strain_vertical": -0.00016480047816302967,
+      "green_shear_tensor_component": 5.147532142021866e-09,
+      "projected_sensor_axis_green_strain": 0.0004955459798230445,
+      "deformation_gradient_garment_basis": [
+        [
+          1.000542810319856,
+          4.347224796716339e-09,
+          6.0623206611960565e-05
+        ],
+        [
+          5.946478745962117e-09,
+          0.9998351859399998,
+          -3.121353646168768e-10
+        ],
+        [
+          -6.0656113625712216e-05,
+          3.1182037818612144e-10,
+          0.9999999981624135
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          1.0004954059011484,
+          0.0001769097526414437,
+          -5.855760172552793e-05
+        ],
+        [
+          0.0001769113518954227,
+          0.9998825903587074,
+          -1.5690138946750492e-05
+        ],
+        [
+          5.85893873784522e-05,
+          1.5698656212880395e-05,
+          0.9999999981624135
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.00399828640028,
+      "local_contact_pressure_kPa": 0.00399828640028,
+      "local_contact_active": true
+    },
+    {
+      "sensor": 3,
+      "panel": "front",
+      "theta_deg": 270.0,
+      "height_mm": 494.0,
+      "sensor_angle_deg": 90.0,
+      "element_theta_index": 48,
+      "element_z_index": 19,
+      "green_strain_circumferential": 0.0005438426451113143,
+      "green_strain_vertical": -0.00016478975992945122,
+      "green_shear_tensor_component": 7.37088044816706e-10,
+      "projected_sensor_axis_green_strain": -0.00016478975992945122,
+      "deformation_gradient_garment_basis": [
+        [
+          1.0005436948307476,
+          5.78947077411624e-10,
+          4.963039226538011e-06
+        ],
+        [
+          8.950607811647351e-10,
+          0.9998351966600001,
+          1.9527321846755857e-10
+        ],
+        [
+          -4.965737605382159e-06,
+          -1.9524391012840253e-10,
+          0.9999999999876839
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          0.9998351966600001,
+          -8.950607812081181e-10,
+          1.9527321846786248e-10
+        ],
+        [
+          -5.789470774550071e-10,
+          1.0005436948307476,
+          -4.963039226538011e-06
+        ],
+        [
+          -1.952439101287066e-10,
+          4.965737605382159e-06,
+          0.9999999999876839
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.00327194101762,
+      "local_contact_pressure_kPa": 0.00327194101762,
+      "local_contact_active": true
+    },
+    {
+      "sensor": 4,
+      "panel": "front",
+      "theta_deg": 270.0,
+      "height_mm": 344.5,
+      "sensor_angle_deg": 0.0,
+      "element_theta_index": 48,
+      "element_z_index": 13,
+      "green_strain_circumferential": 0.0005438243286329802,
+      "green_strain_vertical": -0.00016476484403699088,
+      "green_shear_tensor_component": 3.0986711297516877e-09,
+      "projected_sensor_axis_green_strain": 0.0005438243286329802,
+      "deformation_gradient_garment_basis": [
+        [
+          1.0005436765242257,
+          1.8844647305512908e-09,
+          4.9623358044536384e-06
+        ],
+        [
+          4.312559835397531e-09,
+          0.9998352215799992,
+          7.596505766388695e-10
+        ],
+        [
+          -4.965033710002675e-06,
+          -7.595347539732547e-10,
+          0.9999999999876874
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          1.0005436765242257,
+          1.8844647305512908e-09,
+          4.9623358044536384e-06
+        ],
+        [
+          4.312559835397531e-09,
+          0.9998352215799992,
+          7.596505766388695e-10
+        ],
+        [
+          -4.965033710002675e-06,
+          -7.595347539732547e-10,
+          0.9999999999876874
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.0032718674821,
+      "local_contact_pressure_kPa": 0.0032718674821,
+      "local_contact_active": true
+    },
+    {
+      "sensor": 5,
+      "panel": "front",
+      "theta_deg": 226.79999999999998,
+      "height_mm": 195.0,
+      "sensor_angle_deg": 55.0,
+      "element_theta_index": 40,
+      "element_z_index": 7,
+      "green_strain_circumferential": 0.000543191368342355,
+      "green_strain_vertical": -0.0001647924594840866,
+      "green_shear_tensor_component": -9.226396087448685e-08,
+      "projected_sensor_axis_green_strain": 6.804038953320836e-05,
+      "deformation_gradient_garment_basis": [
+        [
+          1.000543042211094,
+          -2.547152423775101e-08,
+          -5.844585104161648e-05
+        ],
+        [
+          -1.5906877013442756e-07,
+          0.9998351939600002,
+          1.8251008122992968e-10
+        ],
+        [
+          5.8477589705674404e-05,
+          -1.8396870769179384e-10,
+          0.9999999982920411
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          1.0000679821998246,
+          -0.00033248153222251273,
+          -3.352301345644831e-05
+        ],
+        [
+          -0.00033261512946842104,
+          1.0003102539712694,
+          4.7876143044432026e-05
+        ],
+        [
+          3.354121681143635e-05,
+          -4.7902142672611846e-05,
+          0.9999999982920411
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.00384938169886,
+      "local_contact_pressure_kPa": 0.0038493816988599996,
+      "local_contact_active": true
+    },
+    {
+      "sensor": 6,
+      "panel": "front",
+      "theta_deg": 313.2,
+      "height_mm": 195.0,
+      "sensor_angle_deg": 105.0,
+      "element_theta_index": 55,
+      "element_z_index": 7,
+      "green_strain_circumferential": 0.0005431913683430212,
+      "green_strain_vertical": -0.0001647924594840866,
+      "green_shear_tensor_component": 9.22639608744869e-08,
+      "projected_sensor_axis_green_strain": -0.00011741266773438167,
+      "deformation_gradient_garment_basis": [
+        [
+          1.0005430422110946,
+          2.547152423775101e-08,
+          5.844585104123258e-05
+        ],
+        [
+          1.5906877013442767e-07,
+          0.9998351939600002,
+          1.8251008122993557e-10
+        ],
+        [
+          -5.8477589705230315e-05,
+          -1.839687076917806e-10,
+          0.9999999982920412
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          0.9998825646667379,
+          0.0001768153558592338,
+          -1.5126723065494973e-05
+        ],
+        [
+          0.0001769489531050312,
+          1.0004956715043571,
+          -5.645440419725533e-05
+        ],
+        [
+          1.5134936227278726e-05,
+          5.648506177002296e-05,
+          0.9999999982920412
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.00384938169886,
+      "local_contact_pressure_kPa": 0.0038493816988599996,
+      "local_contact_active": true
+    },
+    {
+      "sensor": 7,
+      "panel": "front",
+      "theta_deg": 270.0,
+      "height_mm": 123.5,
+      "sensor_angle_deg": 90.0,
+      "element_theta_index": 48,
+      "element_z_index": 4,
+      "green_strain_circumferential": 0.0005437824964574789,
+      "green_strain_vertical": -0.0001646249070889061,
+      "green_shear_tensor_component": 1.1861312898660705e-08,
+      "projected_sensor_axis_green_strain": -0.0001646249070889061,
+      "deformation_gradient_garment_basis": [
+        [
+          1.0005436347147894,
+          -3.5295696997743023e-09,
+          4.960420299276142e-06
+        ],
+        [
+          2.7258628878355865e-08,
+          0.9998353615399999,
+          -5.393844956868914e-09
+        ],
+        [
+          -4.963116955879199e-06,
+          5.392974430757271e-09,
+          0.999999999987697
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          0.9998353615399999,
+          -2.7258628878399236e-08,
+          -5.3938449568686104e-09
+        ],
+        [
+          3.529569699730933e-09,
+          1.0005436347147894,
+          -4.960420299276142e-06
+        ],
+        [
+          5.392974430756967e-09,
+          4.963116955879199e-06,
+          0.999999999987697
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.00327187211567,
+      "local_contact_pressure_kPa": 0.00327187211567,
+      "local_contact_active": true
+    },
+    {
+      "sensor": 8,
+      "panel": "back",
+      "theta_deg": 90.0,
+      "height_mm": 494.0,
+      "sensor_angle_deg": 90.0,
+      "element_theta_index": 16,
+      "element_z_index": 19,
+      "green_strain_circumferential": 0.0005438426451059852,
+      "green_strain_vertical": -0.00016478975992945122,
+      "green_shear_tensor_component": 7.370881037533988e-10,
+      "projected_sensor_axis_green_strain": -0.00016478975992945122,
+      "deformation_gradient_garment_basis": [
+        [
+          1.0005436948307422,
+          5.789471952209892e-10,
+          4.963039226780254e-06
+        ],
+        [
+          8.950607811647313e-10,
+          0.9998351966600001,
+          1.952732133869683e-10
+        ],
+        [
+          -4.9657376056042035e-06,
+          -1.952439050492343e-10,
+          0.999999999987684
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          0.9998351966600001,
+          -8.950607812081143e-10,
+          1.952732133872722e-10
+        ],
+        [
+          -5.789471952643723e-10,
+          1.0005436948307422,
+          -4.963039226780254e-06
+        ],
+        [
+          -1.9524390504953836e-10,
+          4.9657376056042035e-06,
+          0.999999999987684
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.00327194101761,
+      "local_contact_pressure_kPa": 0.0032719410176100003,
+      "local_contact_active": true
+    },
+    {
+      "sensor": 9,
+      "panel": "back",
+      "theta_deg": 46.800000000000004,
+      "height_mm": 338.0,
+      "sensor_angle_deg": 160.0,
+      "element_theta_index": 8,
+      "element_z_index": 13,
+      "green_strain_circumferential": 0.0005431950559477983,
+      "green_strain_vertical": -0.00016479793857998581,
+      "green_shear_tensor_component": -3.0052475141346114e-08,
+      "projected_sensor_axis_green_strain": 0.00046039492565515445,
+      "deformation_gradient_garment_basis": [
+        [
+          1.0005430458955675,
+          -1.834416762565448e-08,
+          -5.846537923124826e-05
+        ],
+        [
+          -4.175770153088758e-08,
+          0.9998351884800013,
+          2.545392814782749e-11
+        ],
+        [
+          5.849712871547341e-05,
+          -2.6522231809485957e-11,
+          0.9999999982908998
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          1.0004602616240104,
+          0.000227489674490858,
+          5.4939494140809844e-05
+        ],
+        [
+          0.00022746626095691453,
+          0.9999179727515585,
+          1.9996313465392667e-05
+        ],
+        [
+          -5.496932926223135e-05,
+          -2.00071714246608e-05,
+          0.9999999982908998
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.00384939806537,
+      "local_contact_pressure_kPa": 0.00384939806537,
+      "local_contact_active": true
+    },
+    {
+      "sensor": 10,
+      "panel": "back",
+      "theta_deg": 133.20000000000002,
+      "height_mm": 338.0,
+      "sensor_angle_deg": 20.0,
+      "element_theta_index": 23,
+      "element_z_index": 13,
+      "green_strain_circumferential": 0.000543195055946688,
+      "green_strain_vertical": -0.00016479793857998581,
+      "green_shear_tensor_component": 3.005247514134608e-08,
+      "projected_sensor_axis_green_strain": 0.00046039492565417417,
+      "deformation_gradient_garment_basis": [
+        [
+          1.0005430458955664,
+          1.8344167625654476e-08,
+          5.8465379232836794e-05
+        ],
+        [
+          4.1757701530887544e-08,
+          0.9998351884800013,
+          2.5453928147819517e-11
+        ],
+        [
+          -5.849712871719426e-05,
+          -2.6522231809515736e-11,
+          0.9999999982909
+        ]
+      ],
+      "deformation_gradient_sensor_basis": [
+        [
+          1.0004602616240095,
+          -0.00022748967449053245,
+          5.493949414230259e-05
+        ],
+        [
+          -0.00022746626095658892,
+          0.9999179727515584,
+          -1.9996313465935968e-05
+        ],
+        [
+          -5.496932926384842e-05,
+          2.0007171425249352e-05,
+          0.9999999982909
+        ]
+      ],
+      "director_completion": "unit reference normal mapped to unit current normal",
+      "local_contact_gap_mm": 0.00384939806536,
+      "local_contact_pressure_kPa": 0.00384939806536,
+      "local_contact_active": true
+    }
+  ]
+}

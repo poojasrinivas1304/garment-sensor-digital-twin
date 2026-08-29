@@ -1,0 +1,17 @@
+backing_thickness_mm,case_name,conductive_thickness_mm,coupon_strain,element_count,material_case,mean_conductive_gauge_strain,mesh_level,negative_jacobian_trial_messages,node_count,normal_termination,parameter_value,predicted_delta_R_over_R0,sensor_length_mm,sensor_width_mm,strain_transfer_ratio,varied_parameter
+0.4,geometry_sensor_length_40,0.6,0.3,240,literature_nominal,0.00549849862156222,coarse,0,430,True,40.0,0.03351009576659325,40.0,15.0,0.018328328738540733,sensor_length_mm
+0.4,geometry_sensor_length_60,0.6,0.3,252,literature_nominal,0.0070343506783334675,coarse,0,446,True,60.0,0.04305807251286664,60.0,15.0,0.023447835594444893,sensor_length_mm
+0.4,geometry_sensor_length_80,0.6,0.3,264,literature_nominal,0.009618530433125017,coarse,0,462,True,80.0,0.059311591824346754,80.0,15.0,0.03206176811041672,sensor_length_mm
+0.4,geometry_sensor_length_100,0.6,0.3,276,literature_nominal,0.01538316593649995,coarse,0,478,True,100.0,0.09643581732575512,100.0,15.0,0.05127721978833317,sensor_length_mm
+0.4,geometry_sensor_width_5,0.6,0.3,232,literature_nominal,0.020590973965000002,coarse,0,426,True,5.0,0.1310287167259543,80.0,5.0,0.06863657988333334,sensor_width_mm
+0.4,geometry_sensor_width_10,0.6,0.3,224,literature_nominal,0.012534814177291765,coarse,0,405,True,10.0,0.07794134953706777,80.0,10.0,0.04178271392430588,sensor_width_mm
+0.4,geometry_sensor_width_15,0.6,0.3,264,literature_nominal,0.009618530433125017,coarse,0,462,True,15.0,0.059311591824346754,80.0,15.0,0.03206176811041672,sensor_width_mm
+0.4,geometry_sensor_width_20,0.6,0.3,256,literature_nominal,0.008142741614749838,coarse,0,441,True,20.0,0.050000355977738886,80.0,20.0,0.027142472049166127,sensor_width_mm
+0.2,geometry_backing_thickness_0p2,0.6,0.3,264,literature_nominal,0.012495548985937433,coarse,0,462,True,0.2,0.0776884720926494,80.0,15.0,0.041651829953124775,backing_thickness_mm
+0.4,geometry_backing_thickness_0p4,0.6,0.3,264,literature_nominal,0.009618530433125017,coarse,0,462,True,0.4,0.059311591824346754,80.0,15.0,0.03206176811041672,backing_thickness_mm
+0.6,geometry_backing_thickness_0p6,0.6,0.3,264,literature_nominal,0.007664583190312513,coarse,0,462,True,0.6,0.047000125512133506,80.0,15.0,0.025548610634375045,backing_thickness_mm
+0.8,geometry_backing_thickness_0p8,0.6,0.3,264,literature_nominal,0.005772651942812424,coarse,0,462,True,0.8,0.035208355208071085,80.0,15.0,0.01924217314270808,backing_thickness_mm
+0.4,geometry_conductive_thickness_0p2,0.2,0.3,264,literature_nominal,0.01608545483609376,coarse,0,462,True,0.2,0.10104169678670138,80.0,15.0,0.0536181827869792,conductive_thickness_mm
+0.4,geometry_conductive_thickness_0p4,0.4,0.3,264,literature_nominal,0.012099187607187468,coarse,0,462,True,0.4,0.07513894618542394,80.0,15.0,0.04033062535729156,conductive_thickness_mm
+0.4,geometry_conductive_thickness_0p6,0.6,0.3,264,literature_nominal,0.009618530433125017,coarse,0,462,True,0.6,0.059311591824346754,80.0,15.0,0.03206176811041672,conductive_thickness_mm
+0.4,geometry_conductive_thickness_0p8,0.8,0.3,264,literature_nominal,0.00792997013015615,coarse,0,462,True,0.8,0.04866430808132205,80.0,15.0,0.026433233767187165,conductive_thickness_mm

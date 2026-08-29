@@ -1,0 +1,15 @@
+{
+  "final_gauge_length_mm": 80.76948243465,
+  "nominal_coupon_strain": 0.3,
+  "mean_conductive_gauge_strain": 0.009618530433125017,
+  "strain_transfer_ratio": 0.03206176811041672,
+  "provisional_piezoresistive_beta": 4.0,
+  "predicted_delta_R_over_R0": 0.059311591824346754,
+  "manufacturer_bulk_R0_upper_bound_ohm": 111.11111111111111,
+  "warning": "Mechanical constants and electrical beta are provisional. The bulk-resistivity-derived R0 bound excludes printing anisotropy, interfaces, electrodes and contact resistance.",
+  "case_name": "geometry_conductive_thickness_0p6",
+  "mesh_level": "coarse",
+  "material_case": "literature_nominal",
+  "node_count": 462,
+  "element_count": 264
+}

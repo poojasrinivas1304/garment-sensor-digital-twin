@@ -1,0 +1,36 @@
+{
+  "case": "garment_fit_tensile_006725bp",
+  "febio_normal_termination": true,
+  "mesh": {
+    "shirt_nodes": 1728,
+    "shirt_contact_facets": 1664
+  },
+  "kinematics": {
+    "maximum_nodal_displacement_mm": 1.6999192288298095,
+    "mean_nodal_displacement_mm": 1.6497447490612478,
+    "final_z_range_mm": [
+      -0.483347544916,
+      650.0
+    ],
+    "torso_ellipse_metric_range_at_shirt_midsurface": [
+      0.9999710278743277,
+      1.0005479530541033
+    ]
+  },
+  "contact": {
+    "active_facets": 1496,
+    "active_facet_fraction": 0.8990384615384616,
+    "pressure_MPa_active_mean": 7.022706994211438e-06,
+    "pressure_MPa_active_max": 8.36617451699e-05,
+    "gap_mm_all_range": [
+      -0.0262333532577,
+      -9.02160583835e-05
+    ],
+    "gap_mm_active_range": [
+      -0.00555608334522,
+      -0.000174437020701
+    ],
+    "maximum_absolute_active_gap_mm": 0.00555608334522
+  },
+  "interpretation": "Verification only: geometry, prestrain, material constants, and fit pressure remain provisional and must not be presented as experimentally calibrated."
+}

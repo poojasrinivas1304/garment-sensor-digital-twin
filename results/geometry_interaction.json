@@ -1,0 +1,44 @@
+{
+  "design": "2x2 length-by-width interaction screen on the coarse global screening mesh",
+  "rows": [
+    {
+      "case": "geometry_interaction_L60_W10",
+      "sensor_length_mm": 60.0,
+      "sensor_width_mm": 10.0,
+      "endpoint_strain_percent": 0.9038940525605336,
+      "endpoint_transfer_percent": 3.0129801752017786,
+      "normal_termination": true,
+      "element_count": 216
+    },
+    {
+      "case": "geometry_interaction_L60_W20",
+      "sensor_length_mm": 60.0,
+      "sensor_width_mm": 20.0,
+      "endpoint_strain_percent": 0.6010961375789611,
+      "endpoint_transfer_percent": 2.0036537919298705,
+      "normal_termination": true,
+      "element_count": 240
+    },
+    {
+      "case": "geometry_interaction_L100_W10",
+      "sensor_length_mm": 100.0,
+      "sensor_width_mm": 10.0,
+      "endpoint_strain_percent": 1.9878920344030462,
+      "endpoint_transfer_percent": 6.626306781343487,
+      "normal_termination": true,
+      "element_count": 232
+    },
+    {
+      "case": "geometry_interaction_L100_W20",
+      "sensor_length_mm": 100.0,
+      "sensor_width_mm": 20.0,
+      "endpoint_strain_percent": 1.3064010400437667,
+      "endpoint_transfer_percent": 4.354670133479222,
+      "normal_termination": true,
+      "element_count": 272
+    }
+  ],
+  "difference_in_differences_percentage_points": -1.2623102645923567,
+  "coded_interaction_coefficient_percentage_points": -0.3155775661480892,
+  "all_normal_termination": true
+}

@@ -1,0 +1,5 @@
+case,sensor_length_mm,sensor_width_mm,endpoint_strain_percent,endpoint_transfer_percent,normal_termination,element_count
+geometry_interaction_L60_W10,60.0,10.0,0.9038940525605336,3.0129801752017786,True,216
+geometry_interaction_L60_W20,60.0,20.0,0.6010961375789611,2.0036537919298705,True,240
+geometry_interaction_L100_W10,100.0,10.0,1.9878920344030462,6.626306781343487,True,232
+geometry_interaction_L100_W20,100.0,20.0,1.3064010400437667,4.354670133479222,True,272

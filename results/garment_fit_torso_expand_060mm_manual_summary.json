@@ -1,0 +1,52 @@
+{
+  "case": "garment_fit_torso_expand_060mm_manual",
+  "febio_normal_termination": true,
+  "mesh": {
+    "shirt_nodes": 1728,
+    "shirt_contact_facets": 1664
+  },
+  "kinematics": {
+    "maximum_nodal_displacement_mm": 0.14430709659478638,
+    "mean_nodal_displacement_mm": 0.11361991392569343,
+    "final_z_range_mm": [
+      0.107080858481,
+      650.0
+    ],
+    "torso_ellipse_metric_range_at_shirt_midsurface": [
+      0.999948344326669,
+      0.9999605052263305
+    ],
+    "final_surface_inverted_triangles": 0,
+    "minimum_signed_triangle_area_ratio": 1.0003761436299323
+  },
+  "solver_path": {
+    "rejected_negative_jacobian_trials": 3,
+    "maximum_negative_jacobians_in_rejected_trial": 56
+  },
+  "contact": {
+    "sampling": "FEBio face_data on each primary garment contact facet at the accepted final state",
+    "active_definition": "reported contact pressure > 1e-12 MPa",
+    "active_facets": 1664,
+    "active_facet_fraction": 1.0,
+    "pressure_MPa_active_mean": 3.9841948573785875e-06,
+    "pressure_MPa_active_max": 4.8197600886e-06,
+    "gap_mm_all_range": [
+      0.00327174005931,
+      0.0048197600886
+    ],
+    "gap_mm_active_range": [
+      0.00327174005931,
+      0.0048197600886
+    ],
+    "maximum_absolute_active_gap_mm": 0.0048197600886,
+    "signed_active_gap_mm_range": [
+      0.00327174005931,
+      0.0048197600886
+    ],
+    "active_facets_with_negative_gap": 0,
+    "active_facets_with_positive_gap": 1664,
+    "pressure_gap_zero_intercept_slope_MPa_per_mm": 0.0009999999999999998,
+    "pressure_gap_pearson_r": 0.9999999999999998
+  },
+  "interpretation": "Verification only: geometry, constitutive constants, contact parameters, and fit remain provisional and must not be presented as experimentally calibrated."
+}

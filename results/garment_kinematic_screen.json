@@ -1,0 +1,399 @@
+{
+  "status": "normalized compatible-displacement kinematic screen; not calibrated garment mechanics",
+  "layout_source": "manuscript Figure 2",
+  "mapping_conflict": {
+    "status": "resolved_for_project",
+    "decision": "Figure 2 numbering is the canonical numbering for all simulations, figures, tables and future manuscript text.",
+    "description": "The earlier manuscript Table 1 is superseded because its location names do not match the visible numbering in Figure 2.",
+    "superseded_table_1": {
+      "1": "center chest",
+      "2": "right chest",
+      "3": "left chest",
+      "4": "horizontal torso",
+      "5": "right torso",
+      "6": "lower center torso",
+      "7": "left torso",
+      "8": "left back",
+      "9": "center back",
+      "10": "right back"
+    },
+    "canonical_mapping": {
+      "1": "front image-left upper chest, diagonal",
+      "2": "front image-right upper chest, mirrored diagonal",
+      "3": "front upper center chest, vertical",
+      "4": "front central torso, horizontal",
+      "5": "front image-left lower torso, steep diagonal",
+      "6": "front image-right lower torso, mirrored steep diagonal",
+      "7": "front lower center torso, vertical",
+      "8": "back upper center, vertical",
+      "9": "back image-left mid-back, diagonal",
+      "10": "back image-right mid-back, mirrored diagonal"
+    }
+  },
+  "rankings": {
+    "left_arm_raise": [
+      {
+        "sensor": 3,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.03634648878736089
+      },
+      {
+        "sensor": 8,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.036346488787360874
+      },
+      {
+        "sensor": 6,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.028747435610313024
+      },
+      {
+        "sensor": 9,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.028552986818329767
+      },
+      {
+        "sensor": 4,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.010941600175971409
+      },
+      {
+        "sensor": 7,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.00908662219694322
+      },
+      {
+        "sensor": 1,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.008048237241952461
+      },
+      {
+        "sensor": 5,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.003495746124070987
+      },
+      {
+        "sensor": 10,
+        "panel": "back",
+        "projected_sensor_axis_strain": -0.0006354514670115835
+      },
+      {
+        "sensor": 2,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.00010699880455423277
+      }
+    ],
+    "right_arm_raise": [
+      {
+        "sensor": 8,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.03634648878736089
+      },
+      {
+        "sensor": 3,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.036346488787360874
+      },
+      {
+        "sensor": 10,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.028552986818329754
+      },
+      {
+        "sensor": 5,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.01583130095030041
+      },
+      {
+        "sensor": 4,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.010941600175971409
+      },
+      {
+        "sensor": 7,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.00908662219694322
+      },
+      {
+        "sensor": 2,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.008048237241952465
+      },
+      {
+        "sensor": 6,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.002988002073863553
+      },
+      {
+        "sensor": 9,
+        "panel": "back",
+        "projected_sensor_axis_strain": -0.0006354514670115856
+      },
+      {
+        "sensor": 1,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.00010699880455423624
+      }
+    ],
+    "left_shoulder_touch_twist": [
+      {
+        "sensor": 9,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.03767397444019235
+      },
+      {
+        "sensor": 5,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.029626664919789446
+      },
+      {
+        "sensor": 1,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.029298881291988012
+      },
+      {
+        "sensor": 3,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.027625233109396245
+      },
+      {
+        "sensor": 8,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.02762523310939623
+      },
+      {
+        "sensor": 10,
+        "panel": "back",
+        "projected_sensor_axis_strain": -0.023668282271154938
+      },
+      {
+        "sensor": 2,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.018984616537188897
+      },
+      {
+        "sensor": 7,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.006906308277430379
+      },
+      {
+        "sensor": 6,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.006764182896387253
+      },
+      {
+        "sensor": 4,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.00674741832268344
+      }
+    ],
+    "right_shoulder_touch_twist": [
+      {
+        "sensor": 10,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.03767397444019233
+      },
+      {
+        "sensor": 2,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.029298881291988037
+      },
+      {
+        "sensor": 8,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.027625233109396245
+      },
+      {
+        "sensor": 3,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.02762523310939623
+      },
+      {
+        "sensor": 9,
+        "panel": "back",
+        "projected_sensor_axis_strain": -0.023668282271154948
+      },
+      {
+        "sensor": 1,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.018984616537188876
+      },
+      {
+        "sensor": 5,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.01632563438382005
+      },
+      {
+        "sensor": 6,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.013299440615730886
+      },
+      {
+        "sensor": 7,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.00690630827743037
+      },
+      {
+        "sensor": 4,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.00674741832268344
+      }
+    ],
+    "both_arms_raise": [
+      {
+        "sensor": 3,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.05015999999958414
+      },
+      {
+        "sensor": 8,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.05015999999958414
+      },
+      {
+        "sensor": 9,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.022684281473658967
+      },
+      {
+        "sensor": 10,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.02268428147365896
+      },
+      {
+        "sensor": 6,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.019792107482870993
+      },
+      {
+        "sensor": 4,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.013250000000000001
+      },
+      {
+        "sensor": 5,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.013246762745635344
+      },
+      {
+        "sensor": 7,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.01254000000002614
+      },
+      {
+        "sensor": 1,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.01152362107107765
+      },
+      {
+        "sensor": 2,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.011523621071077645
+      }
+    ],
+    "forward_bend": [
+      {
+        "sensor": 8,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.0799999999995249
+      },
+      {
+        "sensor": 7,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.030000000000038673
+      },
+      {
+        "sensor": 3,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.029999999999995305
+      },
+      {
+        "sensor": 6,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.027591342951085476
+      },
+      {
+        "sensor": 9,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.025447404326419384
+      },
+      {
+        "sensor": 10,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.025447404326419377
+      },
+      {
+        "sensor": 5,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.019989640789949848
+      },
+      {
+        "sensor": 2,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.00849381674779324
+      },
+      {
+        "sensor": 1,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.008493816747793238
+      },
+      {
+        "sensor": 4,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.0053
+      }
+    ],
+    "sitting": [
+      {
+        "sensor": 5,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.025373020314691637
+      },
+      {
+        "sensor": 7,
+        "panel": "front",
+        "projected_sensor_axis_strain": -0.017523017617048636
+      },
+      {
+        "sensor": 6,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.014029786751265368
+      },
+      {
+        "sensor": 4,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.007147282015209992
+      },
+      {
+        "sensor": 3,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.005769426253556626
+      },
+      {
+        "sensor": 8,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.004327069690168825
+      },
+      {
+        "sensor": 10,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.0035539353006869955
+      },
+      {
+        "sensor": 9,
+        "panel": "back",
+        "projected_sensor_axis_strain": 0.003553935300686995
+      },
+      {
+        "sensor": 2,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.001741614974158375
+      },
+      {
+        "sensor": 1,
+        "panel": "front",
+        "projected_sensor_axis_strain": 0.001741614974158374
+      }
+    ]
+  }
+}

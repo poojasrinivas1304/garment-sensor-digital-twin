@@ -1,0 +1,129 @@
+{
+  "description": "Independent one-step contraction sweep from the same reference mesh",
+  "acceptance": {
+    "normal_termination": true,
+    "maximum_absolute_active_gap_mm": 0.01,
+    "maximum_reported_negative_jacobians": 0
+  },
+  "cases": [
+    {
+      "case": "garment_fit_0025bp",
+      "prestrain_gradient": 0.9975,
+      "nominal_contraction_percent": 0.24999999999999467,
+      "exit_code": 0,
+      "timed_out": false,
+      "normal_termination": true,
+      "maximum_reported_negative_jacobians": 52,
+      "active_facets": 104,
+      "active_facet_fraction": 0.0625,
+      "pressure_MPa_active_mean": 9.399621582405768e-05,
+      "pressure_MPa_active_max": 9.45320769508e-05,
+      "gap_mm_all_range": [
+        -2.72438886202,
+        -0.00146042717604
+      ],
+      "gap_mm_active_range": [
+        -0.00655301540854,
+        -0.00654389820773
+      ],
+      "maximum_absolute_active_gap_mm": 0.00655301540854,
+      "maximum_nodal_displacement_mm": 1.7899272652571372
+    },
+    {
+      "case": "garment_fit_0030bp",
+      "prestrain_gradient": 0.997,
+      "nominal_contraction_percent": 0.30000000000000027,
+      "exit_code": 0,
+      "timed_out": false,
+      "normal_termination": true,
+      "maximum_reported_negative_jacobians": 0,
+      "active_facets": 104,
+      "active_facet_fraction": 0.0625,
+      "pressure_MPa_active_mean": 0.0004199154244049615,
+      "pressure_MPa_active_max": 0.000454461562563,
+      "gap_mm_all_range": [
+        -6.52107270445,
+        -0.00306681099094
+      ],
+      "gap_mm_active_range": [
+        -0.038670670061,
+        -0.0376489178604
+      ],
+      "maximum_absolute_active_gap_mm": 0.038670670061,
+      "maximum_nodal_displacement_mm": 5.1681422278195654
+    },
+    {
+      "case": "garment_fit_0035bp",
+      "prestrain_gradient": 0.9965,
+      "nominal_contraction_percent": 0.34999999999999476,
+      "exit_code": 124,
+      "timed_out": true,
+      "normal_termination": false,
+      "maximum_reported_negative_jacobians": 652
+    },
+    {
+      "case": "garment_fit_0040bp",
+      "prestrain_gradient": 0.996,
+      "nominal_contraction_percent": 0.40000000000000036,
+      "exit_code": 1,
+      "timed_out": false,
+      "normal_termination": false,
+      "maximum_reported_negative_jacobians": 502
+    },
+    {
+      "case": "garment_fit_0050bp",
+      "prestrain_gradient": 0.995,
+      "nominal_contraction_percent": 0.5000000000000004,
+      "exit_code": 124,
+      "timed_out": true,
+      "normal_termination": false,
+      "maximum_reported_negative_jacobians": 832
+    },
+    {
+      "case": "garment_fit_0075bp",
+      "prestrain_gradient": 0.9925,
+      "nominal_contraction_percent": 0.7499999999999951,
+      "exit_code": 0,
+      "timed_out": false,
+      "normal_termination": true,
+      "maximum_reported_negative_jacobians": 562,
+      "active_facets": 76,
+      "active_facet_fraction": 0.04567307692307692,
+      "pressure_MPa_active_mean": 0.00018517491474313202,
+      "pressure_MPa_active_max": 0.000983043162886,
+      "gap_mm_all_range": [
+        -7.6691474046,
+        -0.00195572981927
+      ],
+      "gap_mm_active_range": [
+        -0.0575135892558,
+        -0.0025357286567
+      ],
+      "maximum_absolute_active_gap_mm": 0.0575135892558,
+      "maximum_nodal_displacement_mm": 6.154949398866664
+    },
+    {
+      "case": "garment_fit_0100bp",
+      "prestrain_gradient": 0.99,
+      "nominal_contraction_percent": 1.0000000000000009,
+      "exit_code": 0,
+      "timed_out": false,
+      "normal_termination": true,
+      "maximum_reported_negative_jacobians": 0,
+      "active_facets": 48,
+      "active_facet_fraction": 0.028846153846153848,
+      "pressure_MPa_active_mean": 1.5146991022362178e-05,
+      "pressure_MPa_active_max": 3.12279741386e-05,
+      "gap_mm_all_range": [
+        -9.19375388489,
+        -0.00435635606545
+      ],
+      "gap_mm_active_range": [
+        -0.00484633646097,
+        -0.00435635606545
+      ],
+      "maximum_absolute_active_gap_mm": 0.00484633646097,
+      "maximum_nodal_displacement_mm": 7.691518823143094
+    }
+  ]
+}

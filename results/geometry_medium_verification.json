@@ -1,0 +1,110 @@
+[
+  {
+    "case_name": "geometry_verify_baseline_medium",
+    "design": "baseline",
+    "sensor_length_mm": 80.0,
+    "sensor_width_mm": 15.0,
+    "backing_thickness_mm": 0.4,
+    "conductive_thickness_mm": 0.6,
+    "coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.00812823796815465,
+    "strain_transfer_ratio": 0.0270941265605155,
+    "element_count": 1920
+  },
+  {
+    "case_name": "geometry_verify_length_40_medium",
+    "design": "length_40",
+    "sensor_length_mm": 40.0,
+    "sensor_width_mm": 15.0,
+    "backing_thickness_mm": 0.4,
+    "conductive_thickness_mm": 0.6,
+    "coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.00381491493452355,
+    "strain_transfer_ratio": 0.0127163831150785,
+    "element_count": 1728
+  },
+  {
+    "case_name": "geometry_verify_length_100_medium",
+    "design": "length_100",
+    "sensor_length_mm": 100.0,
+    "sensor_width_mm": 15.0,
+    "backing_thickness_mm": 0.4,
+    "conductive_thickness_mm": 0.6,
+    "coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.013771005565047716,
+    "strain_transfer_ratio": 0.04590335188349239,
+    "element_count": 2016
+  },
+  {
+    "case_name": "geometry_verify_width_5_medium",
+    "design": "width_5",
+    "sensor_length_mm": 80.0,
+    "sensor_width_mm": 5.0,
+    "backing_thickness_mm": 0.4,
+    "conductive_thickness_mm": 0.6,
+    "coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.01792120390236107,
+    "strain_transfer_ratio": 0.059737346341203576,
+    "element_count": 1664
+  },
+  {
+    "case_name": "geometry_verify_width_20_medium",
+    "design": "width_20",
+    "sensor_length_mm": 80.0,
+    "sensor_width_mm": 20.0,
+    "backing_thickness_mm": 0.4,
+    "conductive_thickness_mm": 0.6,
+    "coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.006793307213749955,
+    "strain_transfer_ratio": 0.022644357379166518,
+    "element_count": 2048
+  },
+  {
+    "case_name": "geometry_verify_backing_0p2_medium",
+    "design": "backing_0p2",
+    "sensor_length_mm": 80.0,
+    "sensor_width_mm": 15.0,
+    "backing_thickness_mm": 0.2,
+    "conductive_thickness_mm": 0.6,
+    "coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.010985899037202174,
+    "strain_transfer_ratio": 0.03661966345734058,
+    "element_count": 1920
+  },
+  {
+    "case_name": "geometry_verify_backing_0p8_medium",
+    "design": "backing_0p8",
+    "sensor_length_mm": 80.0,
+    "sensor_width_mm": 15.0,
+    "backing_thickness_mm": 0.8,
+    "conductive_thickness_mm": 0.6,
+    "coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.004232275889821402,
+    "strain_transfer_ratio": 0.014107586299404675,
+    "element_count": 1920
+  },
+  {
+    "case_name": "geometry_verify_conductive_0p2_medium",
+    "design": "conductive_0p2",
+    "sensor_length_mm": 80.0,
+    "sensor_width_mm": 15.0,
+    "backing_thickness_mm": 0.4,
+    "conductive_thickness_mm": 0.2,
+    "coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.014268003197678425,
+    "strain_transfer_ratio": 0.047560010658928085,
+    "element_count": 1920
+  },
+  {
+    "case_name": "geometry_verify_conductive_0p8_medium",
+    "design": "conductive_0p8",
+    "sensor_length_mm": 80.0,
+    "sensor_width_mm": 15.0,
+    "backing_thickness_mm": 0.4,
+    "conductive_thickness_mm": 0.8,
+    "coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.006495715535238133,
+    "strain_transfer_ratio": 0.021652385117460444,
+    "element_count": 1920
+  }
+]

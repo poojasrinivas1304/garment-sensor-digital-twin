@@ -1,0 +1,10 @@
+case_name,design,sensor_length_mm,sensor_width_mm,backing_thickness_mm,conductive_thickness_mm,coupon_strain,mean_conductive_gauge_strain,strain_transfer_ratio,element_count
+geometry_verify_baseline_medium,baseline,80.0,15.0,0.4,0.6,0.3,0.00812823796815465,0.0270941265605155,1920
+geometry_verify_length_40_medium,length_40,40.0,15.0,0.4,0.6,0.3,0.00381491493452355,0.0127163831150785,1728
+geometry_verify_length_100_medium,length_100,100.0,15.0,0.4,0.6,0.3,0.013771005565047716,0.04590335188349239,2016
+geometry_verify_width_5_medium,width_5,80.0,5.0,0.4,0.6,0.3,0.01792120390236107,0.059737346341203576,1664
+geometry_verify_width_20_medium,width_20,80.0,20.0,0.4,0.6,0.3,0.006793307213749955,0.022644357379166518,2048
+geometry_verify_backing_0p2_medium,backing_0p2,80.0,15.0,0.2,0.6,0.3,0.010985899037202174,0.03661966345734058,1920
+geometry_verify_backing_0p8_medium,backing_0p8,80.0,15.0,0.8,0.6,0.3,0.004232275889821402,0.014107586299404675,1920
+geometry_verify_conductive_0p2_medium,conductive_0p2,80.0,15.0,0.4,0.2,0.3,0.014268003197678425,0.047560010658928085,1920
+geometry_verify_conductive_0p8_medium,conductive_0p8,80.0,15.0,0.4,0.8,0.3,0.006495715535238133,0.021652385117460444,1920

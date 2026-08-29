@@ -1,0 +1,15 @@
+{
+  "final_gauge_length_mm": 80.33858207118571,
+  "nominal_coupon_strain": 0.3,
+  "mean_conductive_gauge_strain": 0.004232275889821402,
+  "strain_transfer_ratio": 0.014107586299404675,
+  "provisional_piezoresistive_beta": 4.0,
+  "predicted_delta_R_over_R0": 0.025700499749961025,
+  "manufacturer_bulk_R0_upper_bound_ohm": 111.11111111111111,
+  "warning": "Mechanical constants and electrical beta are provisional. The bulk-resistivity-derived R0 bound excludes printing anisotropy, interfaces, electrodes and contact resistance.",
+  "case_name": "geometry_verify_backing_0p8_medium",
+  "mesh_level": "medium",
+  "material_case": "literature_nominal",
+  "node_count": 2601,
+  "element_count": 1920
+}
