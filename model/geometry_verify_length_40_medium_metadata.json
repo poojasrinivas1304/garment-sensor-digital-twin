@@ -1,0 +1,110 @@
+{
+  "units": {
+    "length": "mm",
+    "stress": "MPa"
+  },
+  "case_name": "geometry_verify_length_40_medium",
+  "mesh_level": "medium",
+  "material_case": "literature_nominal",
+  "target_in_plane_spacing_mm": {
+    "x": 5.0,
+    "y": 2.5
+  },
+  "through_thickness_element_counts": {
+    "nylon": 4,
+    "backing_tpu": 2,
+    "conductive_tpu": 2
+  },
+  "nominal_coupon_length_mm": 120.0,
+  "nominal_coupon_width_mm": 40.0,
+  "textile_thickness_mm": 1.6,
+  "prescribed_displacement_mm": 36.0,
+  "nominal_coupon_strain": 0.3,
+  "initial_gauge_length_mm": 40.0,
+  "sensor_width_mm": 15.0,
+  "backing_thickness_mm": 0.4,
+  "conductive_thickness_mm": 0.6,
+  "gauge_left_node_ids": [
+    2189,
+    2192,
+    2208,
+    2217,
+    2226,
+    2235,
+    2244,
+    2252,
+    2255,
+    2271,
+    2280,
+    2289,
+    2298,
+    2307,
+    2315,
+    2318,
+    2334,
+    2343,
+    2352,
+    2361,
+    2370
+  ],
+  "gauge_right_node_ids": [
+    2205,
+    2206,
+    2215,
+    2224,
+    2233,
+    2242,
+    2251,
+    2268,
+    2269,
+    2278,
+    2287,
+    2296,
+    2305,
+    2314,
+    2331,
+    2332,
+    2341,
+    2350,
+    2359,
+    2368,
+    2377
+  ],
+  "node_count": 2377,
+  "element_count": 1728,
+  "element_count_by_domain": {
+    "nylon_substrate": 1536,
+    "tpu_backing": 96,
+    "conductive_tpu": 96
+  },
+  "materials": {
+    "nylon": {
+      "E_MPa": 0.24,
+      "nu": 0.35
+    },
+    "backing_tpu": {
+      "E_MPa": 48.4,
+      "nu": 0.45
+    },
+    "conductive_tpu": {
+      "E_MPa": 45.0,
+      "nu": 0.45
+    }
+  },
+  "material_identities": {
+    "nylon": {
+      "product": "shirt textile; exact composition and knit structure still unknown",
+      "status": "unidentified"
+    },
+    "backing_tpu": {
+      "product": "Luocute white flexible TPU filament, 1.75 mm, Shore 95A",
+      "asin": "B0D5MMNBRY",
+      "status": "product identified; constitutive curve unavailable"
+    },
+    "conductive_tpu": {
+      "product": "Graphene 3D Lab conductive flexible TPU filament, 1.75 mm, Shore 90A",
+      "manufacturer_volume_resistivity_upper_bound_ohm_cm": 1.25,
+      "status": "product identified; printed resistance-strain curve unavailable"
+    }
+  }
+}

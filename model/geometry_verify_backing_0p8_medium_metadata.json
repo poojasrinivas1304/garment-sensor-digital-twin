@@ -1,0 +1,96 @@
+{
+  "units": {
+    "length": "mm",
+    "stress": "MPa"
+  },
+  "case_name": "geometry_verify_backing_0p8_medium",
+  "mesh_level": "medium",
+  "material_case": "literature_nominal",
+  "target_in_plane_spacing_mm": {
+    "x": 5.0,
+    "y": 2.5
+  },
+  "through_thickness_element_counts": {
+    "nylon": 4,
+    "backing_tpu": 2,
+    "conductive_tpu": 2
+  },
+  "nominal_coupon_length_mm": 120.0,
+  "nominal_coupon_width_mm": 40.0,
+  "textile_thickness_mm": 1.6,
+  "prescribed_displacement_mm": 36.0,
+  "nominal_coupon_strain": 0.3,
+  "initial_gauge_length_mm": 80.0,
+  "sensor_width_mm": 15.0,
+  "backing_thickness_mm": 0.8,
+  "conductive_thickness_mm": 0.6,
+  "gauge_left_node_ids": [
+    2364,
+    2367,
+    2399,
+    2416,
+    2433,
+    2450,
+    2467,
+    2483,
+    2486,
+    2518,
+    2535,
+    2552,
+    2569,
+    2586
+  ],
+  "gauge_right_node_ids": [
+    2396,
+    2397,
+    2414,
+    2431,
+    2448,
+    2465,
+    2482,
+    2515,
+    2516,
+    2533,
+    2550,
+    2567,
+    2584,
+    2601
+  ],
+  "node_count": 2601,
+  "element_count": 1920,
+  "element_count_by_domain": {
+    "nylon_substrate": 1536,
+    "tpu_backing": 192,
+    "conductive_tpu": 192
+  },
+  "materials": {
+    "nylon": {
+      "E_MPa": 0.24,
+      "nu": 0.35
+    },
+    "backing_tpu": {
+      "E_MPa": 48.4,
+      "nu": 0.45
+    },
+    "conductive_tpu": {
+      "E_MPa": 45.0,
+      "nu": 0.45
+    }
+  },
+  "material_identities": {
+    "nylon": {
+      "product": "shirt textile; exact composition and knit structure still unknown",
+      "status": "unidentified"
+    },
+    "backing_tpu": {
+      "product": "Luocute white flexible TPU filament, 1.75 mm, Shore 95A",
+      "asin": "B0D5MMNBRY",
+      "status": "product identified; constitutive curve unavailable"
+    },
+    "conductive_tpu": {
+      "product": "Graphene 3D Lab conductive flexible TPU filament, 1.75 mm, Shore 90A",
+      "manufacturer_volume_resistivity_upper_bound_ohm_cm": 1.25,
+      "status": "product identified; printed resistance-strain curve unavailable"
+    }
+  }
+}

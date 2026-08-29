@@ -1,0 +1,88 @@
+{
+  "units": {
+    "length": "mm",
+    "stress": "MPa"
+  },
+  "case_name": "material_nylon_low",
+  "mesh_level": "medium",
+  "material_case": "nylon_low",
+  "target_in_plane_spacing_mm": {
+    "x": 5.0,
+    "y": 2.5
+  },
+  "through_thickness_element_counts": {
+    "nylon": 4,
+    "backing_tpu": 2,
+    "conductive_tpu": 2
+  },
+  "nominal_coupon_length_mm": 120.0,
+  "prescribed_displacement_mm": 36.0,
+  "initial_gauge_length_mm": 80.0,
+  "gauge_left_node_ids": [
+    2245,
+    2248,
+    2280,
+    2297,
+    2314,
+    2331,
+    2348,
+    2364,
+    2367,
+    2399,
+    2416,
+    2433,
+    2450,
+    2467,
+    2483,
+    2486,
+    2518,
+    2535,
+    2552,
+    2569,
+    2586
+  ],
+  "gauge_right_node_ids": [
+    2277,
+    2278,
+    2295,
+    2312,
+    2329,
+    2346,
+    2363,
+    2396,
+    2397,
+    2414,
+    2431,
+    2448,
+    2465,
+    2482,
+    2515,
+    2516,
+    2533,
+    2550,
+    2567,
+    2584,
+    2601
+  ],
+  "node_count": 2601,
+  "element_count": 1920,
+  "element_count_by_domain": {
+    "nylon_substrate": 1536,
+    "tpu_backing": 192,
+    "conductive_tpu": 192
+  },
+  "materials": {
+    "nylon": {
+      "E_MPa": 0.1,
+      "nu": 0.35
+    },
+    "backing_tpu": {
+      "E_MPa": 48.4,
+      "nu": 0.45
+    },
+    "conductive_tpu": {
+      "E_MPa": 45.0,
+      "nu": 0.45
+    }
+  }
+}
