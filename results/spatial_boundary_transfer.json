@@ -1,0 +1,270 @@
+{
+  "status": "spatial nodal-displacement-derived boundary comparison; uncalibrated mechanical analysis",
+  "method": "periodic bilinear shell-node interpolation followed by a continuous quadratic least-squares boundary map",
+  "rows": [
+    {
+      "case_name": "spatial_map1p0_full_garment_no_contact_s3_local_medium",
+      "garment_model": "full_garment_no_contact",
+      "sensor": 3,
+      "mesh": "local_medium",
+      "spatial_endpoint_percent": -0.0070396581205223185,
+      "homogeneous_endpoint_percent": -0.007143935593862949,
+      "spatial_path_percent": -0.0037474718590017934,
+      "homogeneous_path_percent": -0.0033975554844146096,
+      "endpoint_sign_preserved_vs_homogeneous": true,
+      "path_sign_preserved_vs_homogeneous": true,
+      "endpoint_change_percent_of_homogeneous": 1.459664242077025,
+      "path_change_percent_of_homogeneous": -10.299062846576984,
+      "mapping_rms_residual_mm": 0.00889473289334541,
+      "mapping_maximum_residual_mm": 0.03509710171443132,
+      "normal_termination": true,
+      "negative_jacobian_messages": 0
+    },
+    {
+      "case_name": "spatial_map1p0_full_garment_no_contact_s9_local_medium",
+      "garment_model": "full_garment_no_contact",
+      "sensor": 9,
+      "mesh": "local_medium",
+      "spatial_endpoint_percent": 0.008924223484676475,
+      "homogeneous_endpoint_percent": 0.0028051693018227297,
+      "spatial_path_percent": 0.005671193805108821,
+      "homogeneous_path_percent": 0.0015273824660315648,
+      "endpoint_sign_preserved_vs_homogeneous": true,
+      "path_sign_preserved_vs_homogeneous": true,
+      "endpoint_change_percent_of_homogeneous": 218.13493320626796,
+      "path_change_percent_of_homogeneous": 271.3014867745392,
+      "mapping_rms_residual_mm": 0.048751952511564924,
+      "mapping_maximum_residual_mm": 0.19334852768419797,
+      "normal_termination": true,
+      "negative_jacobian_messages": 0
+    },
+    {
+      "case_name": "spatial_map1p0_full_garment_contact_s3_local_medium",
+      "garment_model": "full_garment_contact",
+      "sensor": 3,
+      "mesh": "local_medium",
+      "spatial_endpoint_percent": -0.01461537253090839,
+      "homogeneous_endpoint_percent": -0.01402127447294177,
+      "spatial_path_percent": -0.007323079022537239,
+      "homogeneous_path_percent": -0.007187195933933651,
+      "endpoint_sign_preserved_vs_homogeneous": true,
+      "path_sign_preserved_vs_homogeneous": true,
+      "endpoint_change_percent_of_homogeneous": -4.237118809086221,
+      "path_change_percent_of_homogeneous": -1.8906273023952076,
+      "mapping_rms_residual_mm": 0.0029013392148409044,
+      "mapping_maximum_residual_mm": 0.009167604065786965,
+      "normal_termination": true,
+      "negative_jacobian_messages": 0
+    },
+    {
+      "case_name": "spatial_map1p0_full_garment_contact_s9_local_medium",
+      "garment_model": "full_garment_contact",
+      "sensor": 9,
+      "mesh": "local_medium",
+      "spatial_endpoint_percent": 0.004907772667497312,
+      "homogeneous_endpoint_percent": 0.005261917344938638,
+      "spatial_path_percent": 0.00261927846742023,
+      "homogeneous_path_percent": 0.0028251392182029908,
+      "endpoint_sign_preserved_vs_homogeneous": true,
+      "path_sign_preserved_vs_homogeneous": true,
+      "endpoint_change_percent_of_homogeneous": -6.7303352414300575,
+      "path_change_percent_of_homogeneous": -7.286747125817897,
+      "mapping_rms_residual_mm": 0.0033728826241477628,
+      "mapping_maximum_residual_mm": 0.014448952091222305,
+      "normal_termination": true,
+      "negative_jacobian_messages": 0
+    }
+  ],
+  "all_endpoint_signs_preserved_vs_homogeneous": true,
+  "all_path_signs_preserved_vs_homogeneous": true,
+  "boundary_fields": {
+    "full_garment_no_contact_s3": {
+      "coordinate_scales_mm": [
+        60.0,
+        20.0
+      ],
+      "term_order": [
+        "x",
+        "y",
+        "x_y",
+        "x_squared",
+        "y_squared"
+      ],
+      "coefficients": [
+        [
+          -0.21574519014047086,
+          2.703570500426845e-15,
+          6.515617412651896e-15,
+          -0.017967409972755647,
+          0.031119679224583502
+        ],
+        [
+          -2.0241092033144922e-17,
+          0.012761750697074671,
+          -0.0024418039968598015,
+          -9.223004994249302e-14,
+          -4.779710423011855e-13
+        ],
+        [
+          1.6271063076273702,
+          -2.1113911419760685e-16,
+          -4.250569666014741e-15,
+          0.12250526224282184,
+          0.123326871794898
+        ]
+      ],
+      "fit_source": {
+        "reference_case": "matched_no_contact_0p6_reference",
+        "movement_case": "matched_no_contact_0p6_movement025",
+        "sensor": 3,
+        "sample_count": 63,
+        "shell_interpolation": "periodic bilinear interpolation of four shell nodes",
+        "mapping": "relative nodal displacement fitted in the fitted-state sensor basis",
+        "rms_residual_mm": 0.00889473289334541,
+        "maximum_vector_residual_mm": 0.03509710171443132,
+        "maximum_sample_vector_increment_mm": 1.8736685691914083
+      }
+    },
+    "full_garment_no_contact_s9": {
+      "coordinate_scales_mm": [
+        60.0,
+        20.0
+      ],
+      "term_order": [
+        "x",
+        "y",
+        "x_y",
+        "x_squared",
+        "y_squared"
+      ],
+      "coefficients": [
+        [
+          -0.06265931008184275,
+          0.18347537189404092,
+          0.1371323745693359,
+          0.6477119045490553,
+          0.009509306014970034
+        ],
+        [
+          -0.6477430858352223,
+          -0.010107153778574657,
+          0.06315823993269129,
+          0.18007953711664146,
+          0.005952577949781544
+        ],
+        [
+          4.602372489587673,
+          0.45422209390572943,
+          0.16086211018788726,
+          -0.05269320710682072,
+          0.019570016396049272
+        ]
+      ],
+      "fit_source": {
+        "reference_case": "matched_no_contact_0p6_reference",
+        "movement_case": "matched_no_contact_0p6_movement025",
+        "sensor": 9,
+        "sample_count": 63,
+        "shell_interpolation": "periodic bilinear interpolation of four shell nodes",
+        "mapping": "relative nodal displacement fitted in the fitted-state sensor basis",
+        "rms_residual_mm": 0.048751952511564924,
+        "maximum_vector_residual_mm": 0.19334852768419797,
+        "maximum_sample_vector_increment_mm": 5.090969043491097
+      }
+    },
+    "full_garment_contact_s3": {
+      "coordinate_scales_mm": [
+        60.0,
+        20.0
+      ],
+      "term_order": [
+        "x",
+        "y",
+        "x_y",
+        "x_squared",
+        "y_squared"
+      ],
+      "coefficients": [
+        [
+          -0.36192389756631527,
+          -7.44879815282157e-15,
+          -1.5951826891835141e-15,
+          -0.061662018918425286,
+          0.020274341818904508
+        ],
+        [
+          -1.2189013842827758e-17,
+          0.06640747237452872,
+          0.004152576926567389,
+          -5.833773397489481e-15,
+          5.347445354263582e-15
+        ],
+        [
+          -0.007580230592331635,
+          -1.0151016608078344e-15,
+          5.484616696662078e-15,
+          -0.012769047104459351,
+          -0.007032926286623332
+        ]
+      ],
+      "fit_source": {
+        "reference_case": "garment_fit_torso_expand_060mm_manual",
+        "movement_case": "garment_both_arms_raise_025",
+        "sensor": 3,
+        "sample_count": 63,
+        "shell_interpolation": "periodic bilinear interpolation of four shell nodes",
+        "mapping": "relative nodal displacement fitted in the fitted-state sensor basis",
+        "rms_residual_mm": 0.0029013392148409044,
+        "maximum_vector_residual_mm": 0.009167604065786965,
+        "maximum_sample_vector_increment_mm": 0.4324867097155121
+      }
+    },
+    "full_garment_contact_s9": {
+      "coordinate_scales_mm": [
+        60.0,
+        20.0
+      ],
+      "term_order": [
+        "x",
+        "y",
+        "x_y",
+        "x_squared",
+        "y_squared"
+      ],
+      "coefficients": [
+        [
+          0.07484285501509641,
+          -0.014708608091389325,
+          -0.016863014456504757,
+          -0.014738629868788796,
+          -0.0014123911237944307
+        ],
+        [
+          -0.0939462699600952,
+          -0.01976464668491586,
+          0.014105826343065602,
+          -0.024312577060727047,
+          0.002404014071292447
+        ],
+        [
+          -0.033304519206133074,
+          -0.0020599537075470446,
+          0.006203168902423493,
+          -0.00039278379436898515,
+          -0.0009362141643296748
+        ]
+      ],
+      "fit_source": {
+        "reference_case": "garment_fit_torso_expand_060mm_manual",
+        "movement_case": "garment_both_arms_raise_025",
+        "sensor": 9,
+        "sample_count": 63,
+        "shell_interpolation": "periodic bilinear interpolation of four shell nodes",
+        "mapping": "relative nodal displacement fitted in the fitted-state sensor basis",
+        "rms_residual_mm": 0.0033728826241477628,
+        "maximum_vector_residual_mm": 0.014448952091222305,
+        "maximum_sample_vector_increment_mm": 0.14718694046925737
+      }
+    }
+  }
+}

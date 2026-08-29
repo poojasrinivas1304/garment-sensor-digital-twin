@@ -35,9 +35,9 @@ does not provide an experimentally calibrated electrical resistance law.
 | Material screen | Textile and TPU constitutive brackets | Test dependence on provisional material assumptions |
 | Orientation screen | Sensor angle under canonical finite strain states | Compare reduced homogeneous-field predictions |
 | Garment mechanics | Contact, no-contact and reduced controls | Separate garment kinematics from contact effects |
-| Resolved sensors | S3, S8 and S9 local meshes | Test whether transferred full-garment deformation retains sign and magnitude |
+| Resolved sensors | S3/S9 local meshes and spatial boundary mapping | Test whether transferred full-garment deformation retains sign and magnitude |
 
-The case manifest indexes **206 simulation cases** and maps each reported case
+The case manifest indexes **214 retained simulation cases** and maps each reported case
 to its FEBio input, metadata, termination record and processed output.
 
 ---
@@ -57,6 +57,13 @@ to its FEBio input, metadata, termination record and processed output.
 - The same resolved-sensor sign was obtained on all three tested local meshes;
   this is a limited consistency result, not proof of asymptotic convergence or
   experimental validation.
+- A spatial shell-node-derived boundary map retained the four tested S3/S9
+  signs but increased the small no-contact S9 magnitude by more than threefold.
+- A regularized in-plane mesh sequence terminated normally at all three levels
+  and improved taper-region element quality, but its endpoint/path fine-grid
+  GCIs of 14.1%/4.19% do not establish full 3D convergence.
+- Augmented-Lagrangian enforcement completed for the frictionless contact pair;
+  a new nonzero-friction fitted trial stagnated and was excluded before motion.
 
 These conclusions are an existence proof for one garment geometry, canonical
 sensor layout and prescribed motion. They should not be generalized to other
@@ -81,33 +88,37 @@ paper_reproducibility_archive/
 ├── claim_to_file_manifest.csv
 ├── excluded_files.csv
 ├── file_inventory_sha256.csv
-├── figures/        # Thirteen final manuscript figure files
-├── model/          # 206 FEBio inputs + 206 matched metadata records
+├── figures/        # Fourteen final manuscript figure files
+├── model/          # 214 FEBio inputs + 214 matched metadata records
 ├── references/     # Material basis and sensor-layout records
 ├── results/        # Frozen outputs, audit tables and four plot-source logs
 └── scripts/        # Retained generation, execution, processing and final plots
 ```
 
-The archive contains **206 indexed simulation cases**. The `model/` directory
-therefore contains 412 files: one FEBio input and one metadata record per case.
+The archive contains **214 indexed simulation cases**. Of these, 179 reached
+normal termination and 35 are retained failed or interrupted numerical trials.
+The latter support bounded solver diagnostics only; no physical response is
+inferred from them. The `model/` directory therefore contains 428 files: one
+FEBio input and one metadata record per indexed case.
 The remaining files are processed outputs, aggregate tables, reference records
 and analysis utilities rather than additional simulations.
 
 | Content | Files | Interpretation |
 |---|---:|---|
-| FEBio inputs | 206 | Accepted indexed simulation cases |
-| Model metadata | 206 | One record per accepted case |
-| Results | 230 | JSON/CSV outputs plus four required solver logs |
-| Scripts | 46 | Generation, execution, processing, audits and final plots |
-| References | 4 | Material and layout provenance |
-| Final figures | 13 | Exact JPEG files used by the manuscript |
+| FEBio inputs | 214 | Indexed normal and diagnostic simulation cases |
+| Model metadata | 214 | One record per indexed case |
+| Results | 244 | JSON/CSV outputs plus five required solver logs |
+| Scripts | 51 | Generation, execution, processing, audits and final plots |
+| References | 5 | Material, layout and prospective-test records |
+| Final figures | 14 | Exact JPEG files used by the manuscript |
 | Root documentation/manifests | 4 | README and three machine-readable audit files |
 
-The archive contains 709 files in total. This is an artifact count, not a
+The archive contains 746 files in total. This is an artifact count, not a
 simulation count. `file_inventory_sha256.csv` records the size and SHA-256
 digest of every other file in the archive.
 
-Four solver logs required to reconstruct manuscript Figures 10 and 12 are
+Five solver logs required to reconstruct manuscript figures or the interrupted
+contact diagnostic are
 included. The other raw solver logs and FEBio plot files exceed the practical
 size of the review bundle; their termination and diagnostic summaries are
 frozen in `case_manifest.csv`, and the raw files are retained by the authors
@@ -146,13 +157,16 @@ python3 scripts/run_contact_aware_sensor_submodels.py
 python3 scripts/run_garment_contact_sensitivity.py
 python3 scripts/run_matched_garment_controls.py
 python3 scripts/run_relative_F_sensor_mesh.py
+python3 scripts/run_spatial_boundary_transfer.py
+python3 scripts/run_quality_mesh_convergence.py
+python3 scripts/build_augmented_contact_continuation_audit.py
 python3 scripts/audit_taper_mesh_quality.py
 python3 scripts/build_reproducibility_tables.py
 ```
 
 Each simulation driver writes the exact FEBio input before execution and
 retains model metadata and processed JSON/CSV output. The machine-readable case
-manifest maps the 206 accepted cases to their model files. The separate
+manifest maps the 214 indexed cases to their model files. The separate
 claim-to-file manifest maps manuscript figures, tables and supplementary
 sections to the relevant data and scripts.
 
@@ -164,13 +178,14 @@ mkdir -p figures
 export MPLBACKEND=Agg
 ```
 
-The final submitted visual variants for Figures 10--13 are produced by:
+The final submitted visual variants for Figures 10--14 are produced by:
 
 ```bash
 python3 scripts/plot_contact_verification_publication_v2.py
 python3 scripts/plot_matched_garment_controls_publication.py
 python3 scripts/plot_full_garment_reversal_field_publication.py
 python3 scripts/plot_relative_F_sensor_mesh_trajectory.py
+python3 scripts/plot_numerical_remediation.py
 ```
 
 ---

@@ -31,6 +31,37 @@ MESH_SPECS = {
         "dx": 2.5, "dy": 1.25, "edge_dx": 0.625, "edge_dy": 0.3125,
         "z_counts": (8, 4, 4), "local": True,
     },
+    # A controlled in-plane refinement family for a regularized 50%-tip taper.
+    # The layer counts and edge spacings are co-refined so that the thinnest
+    # printed elements do not become progressively more anisotropic.
+    "quality_coarse": {
+        "dx": 5.0, "dy": 2.5, "edge_dx": 0.75, "edge_dy": 0.75,
+        "z_counts": (4, 1, 1), "local": True, "quality": True,
+    },
+    "quality_medium": {
+        "dx": 2.5, "dy": 1.25, "edge_dx": 0.375, "edge_dy": 0.375,
+        "z_counts": (6, 2, 2), "local": True, "quality": True,
+    },
+    "quality_fine": {
+        "dx": 1.25, "dy": 0.625, "edge_dx": 0.1875, "edge_dy": 0.1875,
+        "z_counts": (8, 3, 3), "local": True, "quality": True,
+    },
+    # Computationally tractable, controlled in-plane audit. Each printed
+    # material retains one element through thickness; this family therefore
+    # tests in-plane discretization only and is not a formal 3D convergence
+    # sequence.
+    "audit_coarse": {
+        "dx": 5.0, "dy": 2.5, "edge_dx": 1.0, "edge_dy": 1.0,
+        "z_counts": (4, 1, 1), "local": True, "quality": True,
+    },
+    "audit_medium": {
+        "dx": 3.75, "dy": 1.875, "edge_dx": 0.75, "edge_dy": 0.75,
+        "z_counts": (5, 1, 1), "local": True, "quality": True,
+    },
+    "audit_fine": {
+        "dx": 2.5, "dy": 1.25, "edge_dx": 0.5, "edge_dy": 0.5,
+        "z_counts": (6, 1, 1), "local": True, "quality": True,
+    },
 }
 
 MATERIAL_CASES = {
@@ -352,6 +383,7 @@ def generate(
     remote_eyy: float | None = None,
     remote_gamma_xy: float | None = None,
     remote_deformation_gradient: list[list[float]] | None = None,
+    remote_displacement_polynomial: dict[str, object] | None = None,
     time_steps: int = 30,
     maximum_time_step: float = 0.05,
 ) -> None:
@@ -405,6 +437,27 @@ def generate(
             len(row) != 3 for row in remote_deformation_gradient
         ):
             raise ValueError("remote_deformation_gradient must be a 3 by 3 matrix")
+    if remote_displacement_polynomial is not None:
+        if remote_deformation_gradient is not None or loading_angle_deg is not None or any(
+            value is not None for value in explicit_remote_values
+        ):
+            raise ValueError(
+                "remote_displacement_polynomial is mutually exclusive with other remote inputs"
+            )
+        coefficients = remote_displacement_polynomial.get("coefficients")
+        if not isinstance(coefficients, list) or len(coefficients) != 3 or any(
+            not isinstance(row, list) or len(row) != 5 for row in coefficients
+        ):
+            raise ValueError(
+                "remote_displacement_polynomial coefficients must be a 3 by 5 list"
+            )
+        scales = remote_displacement_polynomial.get("coordinate_scales_mm")
+        if not isinstance(scales, list) or len(scales) != 2 or any(
+            float(value) <= 0.0 for value in scales
+        ):
+            raise ValueError(
+                "remote_displacement_polynomial coordinate_scales_mm must contain two positive values"
+            )
     if time_steps <= 0:
         raise ValueError("time_steps must be positive")
     if not 0.0 < maximum_time_step <= 1.0:
@@ -413,6 +466,7 @@ def generate(
         loading_angle_deg is not None
         or remote_exx is not None
         or remote_deformation_gradient is not None
+        or remote_displacement_polynomial is not None
     )
 
     patch_x0 = (coupon_length_mm - sensor_length_mm) / 2.0
@@ -420,14 +474,28 @@ def generate(
     patch_y0 = (coupon_width_mm - sensor_width_mm) / 2.0
     patch_y1 = patch_y0 + sensor_width_mm
     if spec.get("local"):
+        refinement_window_x = (
+            max(5.0, taper_length_mm) if spec.get("quality") else 5.0
+        )
         xs = locally_refined_axis(
-            0.0, coupon_length_mm, patch_x0, patch_x1, 5.0,
+            0.0, coupon_length_mm, patch_x0, patch_x1, refinement_window_x,
             spec["dx"], spec["edge_dx"],
         )
-        ys = locally_refined_axis(
-            0.0, coupon_width_mm, patch_y0, patch_y1, 2.5,
-            spec["dy"], spec["edge_dy"],
-        )
+        if spec.get("quality"):
+            # Refine across the full printed width rather than only in narrow
+            # bands at its transverse edges.
+            ys = sorted(
+                set(
+                    segmented_axis([0.0, patch_y0], spec["dy"])
+                    + segmented_axis([patch_y0, patch_y1], spec["edge_dy"])
+                    + segmented_axis([patch_y1, coupon_width_mm], spec["dy"])
+                )
+            )
+        else:
+            ys = locally_refined_axis(
+                0.0, coupon_width_mm, patch_y0, patch_y1, 2.5,
+                spec["dy"], spec["edge_dy"],
+            )
     else:
         x_breakpoints = [0.0, patch_x0, patch_x1, coupon_length_mm]
         if taper_length_mm > 0.0:
@@ -634,7 +702,47 @@ def generate(
         add_text(loaded, "value", f"{prescribed_displacement_mm:g}", lc="1")
         add_text(loaded, "relative", "0")
     else:
-        if remote_deformation_gradient is not None:
+        if remote_displacement_polynomial is not None:
+            coefficients = [
+                [float(value) for value in row]
+                for row in remote_displacement_polynomial["coefficients"]
+            ]
+            scale_x, scale_y = [
+                float(value)
+                for value in remote_displacement_polynomial["coordinate_scales_mm"]
+            ]
+            center = (coupon_length_mm / 2.0, coupon_width_mm / 2.0)
+            maximum_displacement = 0.0
+            for nid in sorted(affine_boundary_nodes):
+                x, y, _ = node_coordinates[nid]
+                xn = (x - center[0]) / scale_x
+                yn = (y - center[1]) / scale_y
+                terms = (xn, yn, xn * yn, xn * xn, yn * yn)
+                displacement = [
+                    sum(row[index] * terms[index] for index in range(5))
+                    for row in coefficients
+                ]
+                maximum_displacement = max(
+                    maximum_displacement,
+                    math.sqrt(sum(value * value for value in displacement)),
+                )
+                for dof, value in zip(("x", "y", "z"), displacement):
+                    bc = ET.SubElement(
+                        boundary,
+                        "bc",
+                        name=f"spatial_{dof}_{nid}",
+                        type="prescribed displacement",
+                        node_set=f"affine_node_{nid}",
+                    )
+                    add_text(bc, "dof", dof)
+                    add_text(bc, "value", f"{value:.12g}", lc="1")
+                    add_text(bc, "relative", "0")
+            prescribed_displacement_mm = maximum_displacement
+            remote_strain_tensor = {
+                "input_type": "spatial_nodal_displacement_polynomial",
+                **remote_displacement_polynomial,
+            }
+        elif remote_deformation_gradient is not None:
             deformation_gradient = [
                 [float(value) for value in row]
                 for row in remote_deformation_gradient
@@ -687,7 +795,10 @@ def generate(
             exx = coupon_strain * c * c + transverse_strain * s * s
             eyy = coupon_strain * s * s + transverse_strain * c * c
             exy = (coupon_strain - transverse_strain) * s * c
-        if remote_deformation_gradient is None:
+        if (
+            remote_deformation_gradient is None
+            and remote_displacement_polynomial is None
+        ):
             remote_strain_tensor = {
                 "exx": exx,
                 "eyy": eyy,
