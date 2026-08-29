@@ -1,0 +1,38 @@
+[
+  {
+    "case_name": "local_mesh_medium",
+    "taper_length_mm": 0.0,
+    "tip_thickness_fraction": 1.0,
+    "mean_conductive_gauge_strain": 0.007495858069303018,
+    "strain_transfer_ratio": 0.024986193564343395,
+    "predicted_delta_R_over_R0": 0.04594338584081181,
+    "element_count": 7632
+  },
+  {
+    "case_name": "taper_2p5mm_local_medium",
+    "taper_length_mm": 2.5,
+    "tip_thickness_fraction": 0.25,
+    "mean_conductive_gauge_strain": 0.009722426890961523,
+    "strain_transfer_ratio": 0.03240808963653841,
+    "predicted_delta_R_over_R0": 0.059970040459152774,
+    "element_count": 7632
+  },
+  {
+    "case_name": "taper_5mm_local_medium",
+    "taper_length_mm": 5.0,
+    "tip_thickness_fraction": 0.25,
+    "mean_conductive_gauge_strain": 0.009890072124134619,
+    "strain_transfer_ratio": 0.032966907080448735,
+    "predicted_delta_R_over_R0": 0.061033315670559585,
+    "element_count": 7632
+  },
+  {
+    "case_name": "taper_10mm_local_medium",
+    "taper_length_mm": 10.0,
+    "tip_thickness_fraction": 0.25,
+    "mean_conductive_gauge_strain": 0.010455551440168343,
+    "strain_transfer_ratio": 0.03485183813389448,
+    "predicted_delta_R_over_R0": 0.0646272587861525,
+    "element_count": 7632
+  }
+]

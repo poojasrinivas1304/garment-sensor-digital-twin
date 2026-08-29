@@ -1,0 +1,7 @@
+case_name,material_case,loading_angle_deg,fiber_x_c5_MPa,fiber_y_c5_MPa,fiber_stiffness_ratio_x_over_y,mean_conductive_gauge_strain,strain_transfer_vs_major_strain,element_count,change_vs_balanced_percent
+anisotropy_balanced_angle_0_local_medium,textile_fiber_balanced,0.0,0.2,0.2,1.0,0.007891834941250054,0.026306116470833515,7632,0.0
+anisotropy_balanced_angle_60_local_medium,textile_fiber_balanced,60.0,0.2,0.2,1.0,0.0003840756706741999,0.0012802522355806663,7632,0.0
+anisotropy_x3_angle_0_local_medium,textile_fiber_x3,0.0,0.3,0.1,2.9999999999999996,0.009157439646442712,0.030524798821475706,7632,16.036887677128586
+anisotropy_x3_angle_60_local_medium,textile_fiber_x3,60.0,0.3,0.1,2.9999999999999996,0.0006523535322934037,0.002174511774311346,7632,69.85026183727636
+anisotropy_y3_angle_0_local_medium,textile_fiber_y3,0.0,0.1,0.3,0.33333333333333337,0.006442816436466358,0.021476054788221195,7632,-18.360983416033957
+anisotropy_y3_angle_60_local_medium,textile_fiber_y3,60.0,0.1,0.3,0.33333333333333337,0.00010825104726759349,0.00036083682422531166,7632,-71.8151771817331

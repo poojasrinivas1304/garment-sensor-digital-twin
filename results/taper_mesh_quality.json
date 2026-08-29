@@ -1,0 +1,35 @@
+[
+  {
+    "file": "taper_mesh_10mm_tip25pct_local_coarse.feb",
+    "element_count": 1488,
+    "taper_element_count": 144,
+    "all_edge_aspect_ratio_median": 18.749999999999993,
+    "all_edge_aspect_ratio_95th": 50.000000000000014,
+    "all_edge_aspect_ratio_maximum": 100.00000000000036,
+    "taper_edge_aspect_ratio_median": 35.76109498106197,
+    "taper_edge_aspect_ratio_95th": 94.99999999999974,
+    "taper_edge_aspect_ratio_maximum": 100.00000000000036
+  },
+  {
+    "file": "taper_mesh_10mm_tip25pct_local_medium.feb",
+    "element_count": 7632,
+    "taper_element_count": 720,
+    "all_edge_aspect_ratio_median": 18.74999765625029,
+    "all_edge_aspect_ratio_95th": 37.50000937500238,
+    "all_edge_aspect_ratio_maximum": 75.00007500007497,
+    "taper_edge_aspect_ratio_median": 27.928222827477807,
+    "taper_edge_aspect_ratio_95th": 60.02701793853935,
+    "taper_edge_aspect_ratio_maximum": 75.00007500007497
+  },
+  {
+    "file": "taper_mesh_10mm_tip25pct_local_fine.feb",
+    "element_count": 40704,
+    "taper_element_count": 3840,
+    "all_edge_aspect_ratio_median": 12.5,
+    "all_edge_aspect_ratio_95th": 25.000000000000032,
+    "all_edge_aspect_ratio_maximum": 50.00000000000018,
+    "taper_edge_aspect_ratio_median": 18.18514169676871,
+    "taper_edge_aspect_ratio_95th": 40.01012371887895,
+    "taper_edge_aspect_ratio_maximum": 50.00000000000018
+  }
+]

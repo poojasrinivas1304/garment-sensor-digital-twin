@@ -1,0 +1,4 @@
+case_name,element_count,endpoint_difference_vs_fine_percent,endpoint_strain,endpoint_transfer_ratio,mesh_level,negative_jacobian_trial_messages,node_count,normal_termination,path_difference_vs_fine_percent,path_strain,return_code,taper_length_mm,tip_thickness_fraction,wall_time_seconds
+taper_mesh_10mm_tip25pct_local_coarse,1488,13.899792974460636,0.011246704010341979,0.0374890133678066,local_coarse,0,2042,True,8.75465466156257,0.011182581915081945,0,10.0,0.25,0.0
+taper_mesh_10mm_tip25pct_local_medium,7632,5.942513027468519,0.010460985529612898,0.03486995176537633,local_medium,0,9305,True,3.533920048043288,0.010645765420613162,0,10.0,0.25,0.0
+taper_mesh_10mm_tip25pct_local_fine,40704,0.0,0.009874209352482132,0.03291403117494044,local_fine,7,46449,True,0.0,0.010282393843170588,0,10.0,0.25,0.0

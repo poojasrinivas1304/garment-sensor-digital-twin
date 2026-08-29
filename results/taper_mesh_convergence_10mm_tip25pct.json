@@ -1,0 +1,67 @@
+{
+  "rows": [
+    {
+      "case_name": "taper_mesh_10mm_tip25pct_local_coarse",
+      "mesh_level": "local_coarse",
+      "taper_length_mm": 10.0,
+      "tip_thickness_fraction": 0.25,
+      "normal_termination": true,
+      "return_code": 0,
+      "wall_time_seconds": 0.0,
+      "negative_jacobian_trial_messages": 0,
+      "node_count": 2042,
+      "element_count": 1488,
+      "endpoint_strain": 0.011246704010341979,
+      "path_strain": 0.011182581915081945,
+      "endpoint_transfer_ratio": 0.0374890133678066,
+      "endpoint_difference_vs_fine_percent": 13.899792974460636,
+      "path_difference_vs_fine_percent": 8.75465466156257
+    },
+    {
+      "case_name": "taper_mesh_10mm_tip25pct_local_medium",
+      "mesh_level": "local_medium",
+      "taper_length_mm": 10.0,
+      "tip_thickness_fraction": 0.25,
+      "normal_termination": true,
+      "return_code": 0,
+      "wall_time_seconds": 0.0,
+      "negative_jacobian_trial_messages": 0,
+      "node_count": 9305,
+      "element_count": 7632,
+      "endpoint_strain": 0.010460985529612898,
+      "path_strain": 0.010645765420613162,
+      "endpoint_transfer_ratio": 0.03486995176537633,
+      "endpoint_difference_vs_fine_percent": 5.942513027468519,
+      "path_difference_vs_fine_percent": 3.533920048043288
+    },
+    {
+      "case_name": "taper_mesh_10mm_tip25pct_local_fine",
+      "mesh_level": "local_fine",
+      "taper_length_mm": 10.0,
+      "tip_thickness_fraction": 0.25,
+      "normal_termination": true,
+      "return_code": 0,
+      "wall_time_seconds": 0.0,
+      "negative_jacobian_trial_messages": 7,
+      "node_count": 46449,
+      "element_count": 40704,
+      "endpoint_strain": 0.009874209352482132,
+      "path_strain": 0.010282393843170588,
+      "endpoint_transfer_ratio": 0.03291403117494044,
+      "endpoint_difference_vs_fine_percent": 0.0,
+      "path_difference_vs_fine_percent": 0.0
+    }
+  ],
+  "metrics": {
+    "status": "three normal terminations; monotonic but not mesh-independent",
+    "effective_spacing_ratio_medium_to_fine": 1.7471609294725976,
+    "effective_spacing_ratio_coarse_to_medium": 1.724560667569235,
+    "effective_spacing_definition": "h proportional to element_count^(-1/3); only indicative for nonuniform anisotropic local meshes",
+    "endpoint_observed_order_indicative": 0.5725674961146454,
+    "endpoint_fine_grid_GCI_percent_indicative": 19.733490395489138,
+    "endpoint_richardson_extrapolated_strain_indicative": 0.00831538842912009,
+    "path_observed_order_indicative": 0.7510246592220071,
+    "path_fine_grid_GCI_percent_indicative": 8.486179473196795,
+    "path_richardson_extrapolated_strain_indicative": 0.009584327926632673
+  }
+}
