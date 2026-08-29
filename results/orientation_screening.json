@@ -1,0 +1,187 @@
+{
+  "method": "first-order observation matrix for identifiability; response heatmap uses exact directional engineering stretch from canonical tensors interpreted as Green strain, multiplied by the 5 mm taper screening transfer ratio",
+  "candidate_angles_deg": [
+    -75,
+    -60,
+    -45,
+    -30,
+    -15,
+    0,
+    15,
+    30,
+    45,
+    60,
+    75,
+    90
+  ],
+  "transfer_ratio": 0.032984678440592795,
+  "canonical_states": {
+    "horizontal_extension": {
+      "exx": 0.3,
+      "eyy": -0.09,
+      "gamma_xy": 0.0
+    },
+    "vertical_extension": {
+      "exx": -0.09,
+      "eyy": 0.3,
+      "gamma_xy": 0.0
+    },
+    "positive_shear": {
+      "exx": 0.08,
+      "eyy": 0.04,
+      "gamma_xy": 0.2
+    },
+    "negative_shear": {
+      "exx": 0.08,
+      "eyy": 0.04,
+      "gamma_xy": -0.2
+    },
+    "biaxial_extension": {
+      "exx": 0.18,
+      "eyy": 0.12,
+      "gamma_xy": 0.0
+    }
+  },
+  "best_subsets_by_sensor_count": {
+    "3": {
+      "sensor_count": 3,
+      "angles_deg": [
+        -75,
+        -15,
+        45
+      ],
+      "condition_number": 2.0000000000000004,
+      "determinant_information_matrix": 0.4218750000000003
+    },
+    "4": {
+      "sensor_count": 4,
+      "angles_deg": [
+        -75,
+        -30,
+        15,
+        60
+      ],
+      "condition_number": 2.0,
+      "determinant_information_matrix": 1.0000000000000004
+    },
+    "5": {
+      "sensor_count": 5,
+      "angles_deg": [
+        -75,
+        -30,
+        0,
+        30,
+        60
+      ],
+      "condition_number": 2.0492399311190472,
+      "determinant_information_matrix": 1.8693908773652752
+    }
+  },
+  "top_ten_three_sensor_subsets_by_information": [
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -75,
+        -15,
+        45
+      ],
+      "condition_number": 2.0000000000000004,
+      "determinant_information_matrix": 0.4218750000000003
+    },
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -45,
+        15,
+        75
+      ],
+      "condition_number": 2.0000000000000004,
+      "determinant_information_matrix": 0.42187500000000017
+    },
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -60,
+        0,
+        60
+      ],
+      "condition_number": 1.9999999999999996,
+      "determinant_information_matrix": 0.42187500000000006
+    },
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -30,
+        30,
+        90
+      ],
+      "condition_number": 2.0000000000000004,
+      "determinant_information_matrix": 0.42187500000000006
+    },
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -30,
+        30,
+        75
+      ],
+      "condition_number": 2.18021022255936,
+      "determinant_information_matrix": 0.34987976320958253
+    },
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -45,
+        30,
+        75
+      ],
+      "condition_number": 1.8504624810734607,
+      "determinant_information_matrix": 0.3498797632095825
+    },
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -75,
+        -30,
+        45
+      ],
+      "condition_number": 1.8504624810734616,
+      "determinant_information_matrix": 0.3498797632095825
+    },
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -45,
+        30,
+        90
+      ],
+      "condition_number": 2.134682346283272,
+      "determinant_information_matrix": 0.3498797632095825
+    },
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -30,
+        45,
+        90
+      ],
+      "condition_number": 2.1346823462832725,
+      "determinant_information_matrix": 0.3498797632095825
+    },
+    {
+      "sensor_count": 3,
+      "angles_deg": [
+        -75,
+        -30,
+        30
+      ],
+      "condition_number": 2.180210222559361,
+      "determinant_information_matrix": 0.3498797632095825
+    }
+  ],
+  "limitations": [
+    "not a rotated full-field FEBio model",
+    "assumes angle-independent scalar strain-transfer ratio",
+    "canonical strain states are basis cases, not measured garment movements"
+  ]
+}

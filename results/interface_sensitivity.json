@@ -1,0 +1,72 @@
+[
+  {
+    "case": "interface_perfect_bond_local_medium",
+    "bond_model": "perfect shared-node",
+    "interface_thickness_mm": 0.0,
+    "interface_E_MPa": null,
+    "interface_nu": null,
+    "initialized_unbonded_length_each_end_mm": 0.0,
+    "endpoint_strain_percent": 0.9895403532177837,
+    "path_strain_percent": 0.9599808144689973,
+    "endpoint_transfer_percent": 3.2984678440592794,
+    "normal_termination": true,
+    "element_count": 7632,
+    "endpoint_transfer_change_vs_perfect_percent": 0.0
+  },
+  {
+    "case": "interface_E0p01_local_medium",
+    "bond_model": "finite compliant interphase",
+    "interface_thickness_mm": 0.05,
+    "interface_E_MPa": 0.01,
+    "interface_nu": 0.3,
+    "initialized_unbonded_length_each_end_mm": 0.0,
+    "endpoint_strain_percent": 0.9142804031184327,
+    "path_strain_percent": 0.8737750734268622,
+    "endpoint_transfer_percent": 3.047601343728109,
+    "normal_termination": true,
+    "element_count": 7896,
+    "endpoint_transfer_change_vs_perfect_percent": -7.6055463382186606
+  },
+  {
+    "case": "interface_E0p1_local_medium",
+    "bond_model": "finite compliant interphase",
+    "interface_thickness_mm": 0.05,
+    "interface_E_MPa": 0.1,
+    "interface_nu": 0.3,
+    "initialized_unbonded_length_each_end_mm": 0.0,
+    "endpoint_strain_percent": 0.9807867725527507,
+    "path_strain_percent": 0.9421822871295844,
+    "endpoint_transfer_percent": 3.2692892418425026,
+    "normal_termination": true,
+    "element_count": 7896,
+    "endpoint_transfer_change_vs_perfect_percent": -0.8846107828314613
+  },
+  {
+    "case": "interface_E1_local_medium",
+    "bond_model": "finite compliant interphase",
+    "interface_thickness_mm": 0.05,
+    "interface_E_MPa": 1.0,
+    "interface_nu": 0.3,
+    "initialized_unbonded_length_each_end_mm": 0.0,
+    "endpoint_strain_percent": 0.9899563230338516,
+    "path_strain_percent": 0.9528149530380869,
+    "endpoint_transfer_percent": 3.2998544101128386,
+    "normal_termination": true,
+    "element_count": 7896,
+    "endpoint_transfer_change_vs_perfect_percent": 0.042036670330333134
+  },
+  {
+    "case": "interface_E0p1_debond5_local_medium",
+    "bond_model": "finite compliant interphase with initialized end debond",
+    "interface_thickness_mm": 0.05,
+    "interface_E_MPa": 0.1,
+    "interface_nu": 0.3,
+    "initialized_unbonded_length_each_end_mm": 5.0,
+    "endpoint_strain_percent": 0.5906743496279709,
+    "path_strain_percent": 0.6197607814819512,
+    "endpoint_transfer_percent": 1.9689144987599032,
+    "normal_termination": true,
+    "element_count": 7800,
+    "endpoint_transfer_change_vs_perfect_percent": -40.30820999798359
+  }
+]

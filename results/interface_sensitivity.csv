@@ -1,0 +1,6 @@
+case,bond_model,interface_thickness_mm,interface_E_MPa,interface_nu,initialized_unbonded_length_each_end_mm,endpoint_strain_percent,path_strain_percent,endpoint_transfer_percent,normal_termination,element_count,endpoint_transfer_change_vs_perfect_percent
+interface_perfect_bond_local_medium,perfect shared-node,0.0,,,0.0,0.9895403532177837,0.9599808144689973,3.2984678440592794,True,7632,0.0
+interface_E0p01_local_medium,finite compliant interphase,0.05,0.01,0.3,0.0,0.9142804031184327,0.8737750734268622,3.047601343728109,True,7896,-7.6055463382186606
+interface_E0p1_local_medium,finite compliant interphase,0.05,0.1,0.3,0.0,0.9807867725527507,0.9421822871295844,3.2692892418425026,True,7896,-0.8846107828314613
+interface_E1_local_medium,finite compliant interphase,0.05,1.0,0.3,0.0,0.9899563230338516,0.9528149530380869,3.2998544101128386,True,7896,0.042036670330333134
+interface_E0p1_debond5_local_medium,finite compliant interphase with initialized end debond,0.05,0.1,0.3,5.0,0.5906743496279709,0.6197607814819512,1.9689144987599032,True,7800,-40.30820999798359

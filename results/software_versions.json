@@ -1,0 +1,7 @@
+{
+  "python": "3.14.5",
+  "platform": "macOS-15.3.2-arm64-arm-64bit-Mach-O",
+  "febio": "4.13.0",
+  "numpy": "2.4.6",
+  "matplotlib": "3.10.9"
+}

@@ -1,0 +1,19 @@
+{
+  "local_coarse": {
+    "element_count": 1328,
+    "strain_transfer_percent": 2.87051,
+    "solver_status": "normal termination"
+  },
+  "local_medium": {
+    "element_count": 7632,
+    "strain_transfer_percent": 2.49862,
+    "solver_status": "normal termination",
+    "use": "design screening only"
+  },
+  "local_fine": {
+    "element_count": 40704,
+    "solver_status": "manually stopped after repeated early-load divergence recovery",
+    "interpretation": "abrupt perfectly bonded patch termination requires a finite taper before final convergence testing"
+  },
+  "formal_gci_reported": false
+}

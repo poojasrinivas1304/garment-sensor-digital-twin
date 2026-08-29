@@ -1,0 +1,2029 @@
+{
+  "status": "matched 25% full-garment controls and three-level shell-mesh audit",
+  "comparison_rule": "all full-garment pairs use identical reference shell, material, seams, constraints and upper-ring field; only the contact-enabled flag changes in the matched current-mesh control",
+  "reduced_analytical_scale": 0.25,
+  "records": [
+    {
+      "label": "full garment without contact, coarse mesh",
+      "reference_case": "matched_no_contact_0p6_coarse56_reference",
+      "movement_case": "matched_no_contact_0p6_coarse56_movement025",
+      "contact_enabled": false,
+      "mesh": {
+        "circumferential_divisions": 56,
+        "vertical_divisions": 23,
+        "shirt_shell_elements": 1288,
+        "torso_fixed_shell_elements": 1288
+      },
+      "normal_termination": true,
+      "movement_contact_coverage": 0.0,
+      "movement_minimum_signed_area_ratio": 0.9933792274633024,
+      "rows": [
+        {
+          "sensor": 1,
+          "panel": "front",
+          "sensor_angle_deg": 15.0,
+          "green_subtraction_sensor_axis": -0.0011216112463481767,
+          "relative_F_sensor_axis_green": -0.0011216112239907927,
+          "relative_F_sensor_transverse_green": 0.0013251658945162559,
+          "relative_F_sensor_shear_green": -0.0013063036554373493,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9974887968968771,
+              0.012598651433961508,
+              0.05048129087869743
+            ],
+            [
+              -0.014471790132598458,
+              1.0011519635953845,
+              -0.014251849726607426
+            ],
+            [
+              -0.050630474100062134,
+              0.013651064434096912,
+              0.998623314393666
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.000197149736154,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694126,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 2,
+          "panel": "front",
+          "sensor_angle_deg": 165.0,
+          "green_subtraction_sensor_axis": -0.0011216112463481728,
+          "relative_F_sensor_axis_green": -0.0011216112239907927,
+          "relative_F_sensor_transverse_green": 0.001325165894516478,
+          "relative_F_sensor_shear_green": 0.0013063036554373363,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9974887968968771,
+              -0.012598651433961492,
+              0.05048129087869752
+            ],
+            [
+              0.014471790132598417,
+              1.0011519635953847,
+              0.014251849726607476
+            ],
+            [
+              -0.05063047410006197,
+              -0.013651064434096891,
+              0.9986233143936663
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0001971497361544,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694113,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 3,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.003649337456841928,
+          "relative_F_sensor_axis_green": -0.003649337602815328,
+          "relative_F_sensor_transverse_green": 0.0004766714162658392,
+          "relative_F_sensor_shear_green": -0.00018817908947589307,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9960588320019469,
+              -0.0014534010455132624,
+              -0.02389872120907026
+            ],
+            [
+              0.0012104328887148441,
+              1.0004582967061382,
+              0.0058282724283806354
+            ],
+            [
+              0.023804680999933908,
+              -0.005867453432733198,
+              0.9996973953977635
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9968187236612928,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 4,
+          "panel": "front",
+          "sensor_angle_deg": 0.0,
+          "green_subtraction_sensor_axis": 0.00019223142900437473,
+          "relative_F_sensor_axis_green": 0.0001922314279021453,
+          "relative_F_sensor_transverse_green": -0.00209103395033422,
+          "relative_F_sensor_shear_green": 0.00015149841606542795,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.0001598260468274,
+              -0.0008069080489912429,
+              -0.007970157413059195
+            ],
+            [
+              0.000975715014446823,
+              0.997760178163665,
+              -0.017127055457884618
+            ],
+            [
+              0.007989568073101767,
+              0.01708531151438108,
+              0.9998215543596537
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9980985398738381,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.0033125000000000003,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 5,
+          "panel": "front",
+          "sensor_angle_deg": 55.0,
+          "green_subtraction_sensor_axis": -0.0008486734175945454,
+          "relative_F_sensor_axis_green": -0.0008486734233019155,
+          "relative_F_sensor_transverse_green": 0.0006928570645645671,
+          "relative_F_sensor_shear_green": 0.00026904560621897333,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9978061328925911,
+              0.008678513215682129,
+              0.051224615905933524
+            ],
+            [
+              -0.004047287916204721,
+              0.9975276257774587,
+              -0.07933823737820041
+            ],
+            [
+              -0.0516642407846311,
+              0.07905082762552693,
+              0.9955307543290715
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9998428505034506,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.003311690686408836,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 6,
+          "panel": "front",
+          "sensor_angle_deg": 105.0,
+          "green_subtraction_sensor_axis": -0.0004954094281958001,
+          "relative_F_sensor_axis_green": -0.0004954094293148081,
+          "relative_F_sensor_transverse_green": 0.0003395930705774042,
+          "relative_F_sensor_shear_green": -0.0007015392403668108,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9992620008690685,
+              -0.008047252307283313,
+              0.021000118250100182
+            ],
+            [
+              0.004678548824603553,
+              0.9960717578009812,
+              0.09207340668440542
+            ],
+            [
+              -0.021511530429328695,
+              -0.0919536904246976,
+              0.9955307543290716
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9998428505034506,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.004948026870717748,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 7,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.00040335096858723496,
+          "relative_F_sensor_axis_green": -0.00040335095617649586,
+          "relative_F_sensor_transverse_green": -0.00042435063847007237,
+          "relative_F_sensor_shear_green": -6.895731561798761e-05,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9995027774445723,
+              -0.0006510920839711495,
+              -0.013688820725509393
+            ],
+            [
+              0.0006591121551354129,
+              0.9995183915603553,
+              0.010665124704325197
+            ],
+            [
+              0.01367704424939385,
+              -0.010670507708559299,
+              0.9998494243145746
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9991722886665767,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.003135000000006535,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 8,
+          "panel": "back",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.003649337456841928,
+          "relative_F_sensor_axis_green": -0.003649337602815328,
+          "relative_F_sensor_transverse_green": 0.00047667141626206444,
+          "relative_F_sensor_shear_green": -0.00018817908947581523,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9960588320019469,
+              -0.001453401045513264,
+              -0.023898721209070252
+            ],
+            [
+              0.001210432888715001,
+              1.0004582967061344,
+              0.005828272428380453
+            ],
+            [
+              0.023804680999933898,
+              -0.005867453432732994,
+              0.9996973953977633
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9968187236612888,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 9,
+          "panel": "back",
+          "sensor_angle_deg": 160.0,
+          "green_subtraction_sensor_axis": 0.0007761058149276597,
+          "relative_F_sensor_axis_green": 0.0007761058216501082,
+          "relative_F_sensor_transverse_green": -0.0010464576134054937,
+          "relative_F_sensor_shear_green": -0.0009185820940362322,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9978930552468737,
+              0.006154206292838116,
+              -0.07542442426885593
+            ],
+            [
+              -0.009762925219488294,
+              0.9986568152883586,
+              -0.023025903249432496
+            ],
+            [
+              0.07527514347059533,
+              0.023532441356718427,
+              0.996885632358727
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9997262988422637,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.005671070368414742,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 10,
+          "panel": "back",
+          "sensor_angle_deg": 20.0,
+          "green_subtraction_sensor_axis": 0.0007761058149275123,
+          "relative_F_sensor_axis_green": 0.0007761058216501082,
+          "relative_F_sensor_transverse_green": -0.0010464576134056047,
+          "relative_F_sensor_shear_green": 0.0009185820940362781,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9978930552468737,
+              -0.0061542062928381215,
+              -0.07542442426885591
+            ],
+            [
+              0.009762925219488393,
+              0.9986568152883585,
+              0.023025903249432454
+            ],
+            [
+              0.07527514347059543,
+              -0.02353244135671842,
+              0.9968856323587272
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9997262988422638,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.00567107036841474,
+          "sign_vs_reduced_relative_F": false
+        }
+      ]
+    },
+    {
+      "label": "full garment without contact, current mesh",
+      "reference_case": "matched_no_contact_0p6_reference",
+      "movement_case": "matched_no_contact_0p6_movement025",
+      "contact_enabled": false,
+      "mesh": {
+        "circumferential_divisions": 64,
+        "vertical_divisions": 26,
+        "shirt_shell_elements": 1664,
+        "torso_fixed_shell_elements": 1664
+      },
+      "normal_termination": true,
+      "movement_contact_coverage": 0.0,
+      "movement_minimum_signed_area_ratio": 0.9909108403291799,
+      "rows": [
+        {
+          "sensor": 1,
+          "panel": "front",
+          "sensor_angle_deg": 15.0,
+          "green_subtraction_sensor_axis": -0.0010636835033383594,
+          "relative_F_sensor_axis_green": -0.0010636835404442824,
+          "relative_F_sensor_transverse_green": 0.0011793345411749145,
+          "relative_F_sensor_shear_green": -0.001187882266186809,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9975685105044154,
+              0.014697389969565135,
+              0.0494442672440208
+            ],
+            [
+              -0.016325234486904764,
+              1.0009724368158994,
+              -0.014723545901243392
+            ],
+            [
+              -0.04963049957496923,
+              0.014029844805721062,
+              0.9986683541760978
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0001103139101144,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694126,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 2,
+          "panel": "front",
+          "sensor_angle_deg": 165.0,
+          "green_subtraction_sensor_axis": -0.0010636835033382063,
+          "relative_F_sensor_axis_green": -0.0010636835404440603,
+          "relative_F_sensor_transverse_green": 0.0011793345411746925,
+          "relative_F_sensor_shear_green": 0.001187882266186861,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9975685105044156,
+              -0.014697389969565076,
+              0.04944426724402069
+            ],
+            [
+              0.016325234486904813,
+              1.0009724368158992,
+              0.01472354590124342
+            ],
+            [
+              -0.04963049957496927,
+              -0.014029844805721118,
+              0.9986683541760979
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0001103139101144,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694113,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 3,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.0031528485956066055,
+          "relative_F_sensor_axis_green": -0.0031528485956066055,
+          "relative_F_sensor_transverse_green": 0.00038626997507995586,
+          "relative_F_sensor_shear_green": -0.00014823822046555713,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9964928160199997,
+              -0.0013141768565496995,
+              -0.026452904909560766
+            ],
+            [
+              0.0011600483201790522,
+              1.0003697108962788,
+              0.005551705582598527
+            ],
+            [
+              0.02636332143741691,
+              -0.005590564429929677,
+              0.9996346444511465
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9972270972339615,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 4,
+          "panel": "front",
+          "sensor_angle_deg": 0.0,
+          "green_subtraction_sensor_axis": -2.5755551329387227e-05,
+          "relative_F_sensor_axis_green": -2.5755551188388903e-05,
+          "relative_F_sensor_transverse_green": -0.0017035206494823707,
+          "relative_F_sensor_shear_green": 0.00011547318476411449,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9999430476560407,
+              -0.0008651969183442635,
+              -0.00782227082432885
+            ],
+            [
+              0.0009353553346957301,
+              0.9980795375000002,
+              -0.020764645370727624
+            ],
+            [
+              0.0078431787159391,
+              0.020723102062997312,
+              0.9997537904813258
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9982692871980414,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.0033125000000000003,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 5,
+          "panel": "front",
+          "sensor_angle_deg": 55.0,
+          "green_subtraction_sensor_axis": -0.0008235111265195141,
+          "relative_F_sensor_axis_green": -0.0008235111167445575,
+          "relative_F_sensor_transverse_green": 0.0006460915335650963,
+          "relative_F_sensor_shear_green": 0.000270841166805081,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9974714790860424,
+              0.011126145850046709,
+              0.05742251155895857
+            ],
+            [
+              -0.005351756229043051,
+              0.996536568568273,
+              -0.09034212577828783
+            ],
+            [
+              -0.05809462007517285,
+              0.08990694885171739,
+              0.9942539693036787
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.99982135362256,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.003311690686408836,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 6,
+          "panel": "front",
+          "sensor_angle_deg": 105.0,
+          "green_subtraction_sensor_axis": -0.0004775069222630314,
+          "relative_F_sensor_axis_green": -0.00047750691730547024,
+          "relative_F_sensor_transverse_green": 0.00030008733412589805,
+          "relative_F_sensor_shear_green": -0.0006797975581895521,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9992179683815752,
+              -0.010150196131837827,
+              0.023060683571911312
+            ],
+            [
+              0.006327705947252062,
+              0.9947900792727402,
+              0.10453348457348434
+            ],
+            [
+              -0.023841098259762942,
+              -0.10435442667789595,
+              0.9942539693036792
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9998213536225605,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.004948026870717748,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 7,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.0003024671436804849,
+          "relative_F_sensor_axis_green": -0.0003024671436804849,
+          "relative_F_sensor_transverse_green": -0.0006031852611088073,
+          "relative_F_sensor_shear_green": -5.254645491095867e-05,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.99952489668,
+              -0.0006911429977438016,
+              -0.01857179670692934
+            ],
+            [
+              0.0007875361858545126,
+              0.9993375358217169,
+              0.010838093516574589
+            ],
+            [
+              0.01855872884198393,
+              -0.0108462572769452,
+              0.9997687853178866
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9990942968112639,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.003135000000006535,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 8,
+          "panel": "back",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.0031528485956066055,
+          "relative_F_sensor_axis_green": -0.0031528485956066055,
+          "relative_F_sensor_transverse_green": 0.0003862699750573073,
+          "relative_F_sensor_shear_green": -0.0001482382204656184,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9964928160199997,
+              -0.0013141768565496895,
+              -0.02645290490956076
+            ],
+            [
+              0.001160048320178917,
+              1.0003697108962561,
+              0.005551705582597527
+            ],
+            [
+              0.026363321437416917,
+              -0.005590564429928561,
+              0.9996346444511461
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9972270972339385,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 9,
+          "panel": "back",
+          "sensor_angle_deg": 160.0,
+          "green_subtraction_sensor_axis": 0.0007083718248158455,
+          "relative_F_sensor_axis_green": 0.0007083718163367614,
+          "relative_F_sensor_transverse_green": -0.0009924137546222789,
+          "relative_F_sensor_shear_green": -0.0008715720859921831,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9973021643562822,
+              0.008023826524043338,
+              -0.08185392794535308
+            ],
+            [
+              -0.011789542633043035,
+              0.9986658732484097,
+              -0.024129585604201375
+            ],
+            [
+              0.08164645299982355,
+              0.02484480443993729,
+              0.9963521955505927
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9997129916031348,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.005671070368414742,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 10,
+          "panel": "back",
+          "sensor_angle_deg": 20.0,
+          "green_subtraction_sensor_axis": 0.0007083718248160406,
+          "relative_F_sensor_axis_green": 0.0007083718163373165,
+          "relative_F_sensor_transverse_green": -0.0009924137546222789,
+          "relative_F_sensor_shear_green": 0.0008715720859921181,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9973021643562827,
+              -0.008023826524043402,
+              -0.08185392794535296
+            ],
+            [
+              0.011789542633042974,
+              0.9986658732484097,
+              0.02412958560420129
+            ],
+            [
+              0.0816464529998236,
+              -0.024844804439937272,
+              0.9963521955505924
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9997129916031349,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.00567107036841474,
+          "sign_vs_reduced_relative_F": false
+        }
+      ]
+    },
+    {
+      "label": "full garment without contact, fine mesh",
+      "reference_case": "matched_no_contact_0p6_fine72_reference",
+      "movement_case": "matched_no_contact_0p6_fine72_movement025",
+      "contact_enabled": false,
+      "mesh": {
+        "circumferential_divisions": 72,
+        "vertical_divisions": 30,
+        "shirt_shell_elements": 2160,
+        "torso_fixed_shell_elements": 2160
+      },
+      "normal_termination": true,
+      "movement_contact_coverage": 0.0,
+      "movement_minimum_signed_area_ratio": 0.988409474058543,
+      "rows": [
+        {
+          "sensor": 1,
+          "panel": "front",
+          "sensor_angle_deg": 15.0,
+          "green_subtraction_sensor_axis": -0.0009091708600010956,
+          "relative_F_sensor_axis_green": -0.0009091708579703206,
+          "relative_F_sensor_transverse_green": 0.0015346876844246626,
+          "relative_F_sensor_shear_green": -0.000905382710796555,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9975794868966577,
+              0.015569970822281556,
+              0.052165050410665006
+            ],
+            [
+              -0.016799212723263568,
+              1.001362927693267,
+              -0.010745272312688526
+            ],
+            [
+              -0.05229351832626301,
+              0.00996184817248879,
+              0.9985806660648798
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0006208940494008,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694126,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 2,
+          "panel": "front",
+          "sensor_angle_deg": 165.0,
+          "green_subtraction_sensor_axis": -0.000909170860001096,
+          "relative_F_sensor_axis_green": -0.0009091708579704316,
+          "relative_F_sensor_transverse_green": 0.0015346876844246626,
+          "relative_F_sensor_shear_green": 0.0009053827107965715,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9975794868966575,
+              -0.01556997082228153,
+              0.052165050410665006
+            ],
+            [
+              0.01679921272326357,
+              1.001362927693267,
+              0.010745272312688542
+            ],
+            [
+              -0.052293518326263,
+              -0.009961848172488809,
+              0.9985806660648798
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0006208940494006,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694113,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 3,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.0027818352520408984,
+          "relative_F_sensor_axis_green": -0.0027818354232307385,
+          "relative_F_sensor_transverse_green": 0.00030620646566126286,
+          "relative_F_sensor_shear_green": -0.00012006532411409476,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9967896876473771,
+              -0.001219988682640341,
+              -0.029162067058918845
+            ],
+            [
+              0.0011274051742127078,
+              1.0002917920502106,
+              0.00518128266987209
+            ],
+            [
+              0.029075362610913123,
+              -0.005220662401944543,
+              0.9995612678344161
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9975195622934719,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 4,
+          "panel": "front",
+          "sensor_angle_deg": 0.0,
+          "green_subtraction_sensor_axis": -0.00016740063356129875,
+          "relative_F_sensor_axis_green": -0.00016740063301406982,
+          "relative_F_sensor_transverse_green": -0.0014821253360186581,
+          "relative_F_sensor_shear_green": 9.265060406075411e-05,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9998040865651591,
+              -0.0009124298131326572,
+              -0.007469782777472784
+            ],
+            [
+              0.0009160536918590414,
+              0.998217219450504,
+              -0.024482167960601556
+            ],
+            [
+              0.007493201399494124,
+              0.024439713425143707,
+              0.9996723592243639
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9983495911554601,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.0033125000000000003,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 5,
+          "panel": "front",
+          "sensor_angle_deg": 55.0,
+          "green_subtraction_sensor_axis": -0.0008404764778241953,
+          "relative_F_sensor_axis_green": -0.000840476459753714,
+          "relative_F_sensor_transverse_green": 0.0006367479548072819,
+          "relative_F_sensor_shear_green": 0.0002758581076832663,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9972062540861159,
+              0.013264104394515062,
+              0.06118728275238853
+            ],
+            [
+              -0.00667638532338145,
+              0.9958279834194047,
+              -0.09765051555812672
+            ],
+            [
+              -0.062081879570800115,
+              0.09707825133915297,
+              0.9933380558705134
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9997950279495581,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.003311690686408836,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 6,
+          "panel": "front",
+          "sensor_angle_deg": 105.0,
+          "green_subtraction_sensor_axis": -0.0004903558669973545,
+          "relative_F_sensor_axis_green": -0.0004903558558297383,
+          "relative_F_sensor_transverse_green": 0.0002866273508831396,
+          "relative_F_sensor_shear_green": -0.0006860903456832549,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9991622791429446,
+              -0.012050519998905525,
+              0.024098794761344484
+            ],
+            [
+              0.007889969718990933,
+              0.9938719583625758,
+              0.11268875210259141
+            ],
+            [
+              -0.02513516668037787,
+              -0.11245696977093349,
+              0.9933380558705133
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9997950279495578,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.004948026870717748,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 7,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.00028407419809795,
+          "relative_F_sensor_axis_green": -0.0002840741893572196,
+          "relative_F_sensor_transverse_green": -0.0007249546504077276,
+          "relative_F_sensor_shear_green": -4.600890685740736e-05,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9994550055853075,
+              -0.0007123601940187275,
+              -0.022835378985090585
+            ],
+            [
+              0.0008621585790699581,
+              0.9992184790951792,
+              0.010572323768299318
+            ],
+            [
+              0.022821045426163297,
+              -0.010583679740776345,
+              0.9996833355801953
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9989908696363599,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.003135000000006535,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 8,
+          "panel": "back",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.0027818352520408984,
+          "relative_F_sensor_axis_green": -0.0027818354232307385,
+          "relative_F_sensor_transverse_green": 0.0003062064656166319,
+          "relative_F_sensor_shear_green": -0.00012006532411414723,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9967896876473771,
+              -0.0012199886826403368,
+              -0.029162067058918856
+            ],
+            [
+              0.0011274051742125926,
+              1.000291792050166,
+              0.0051812826698703785
+            ],
+            [
+              0.029075362610913126,
+              -0.005220662401942604,
+              0.9995612678344165
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.997519562293428,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 9,
+          "panel": "back",
+          "sensor_angle_deg": 160.0,
+          "green_subtraction_sensor_axis": 0.0006243824248891066,
+          "relative_F_sensor_axis_green": 0.000624382411297475,
+          "relative_F_sensor_transverse_green": -0.0009102483744163892,
+          "relative_F_sensor_shear_green": -0.000803865128407682,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9966048544142411,
+              0.00939501267804439,
+              -0.08886168954879092
+            ],
+            [
+              -0.013348549634004956,
+              0.9986899140828257,
+              -0.02572465926116519
+            ],
+            [
+              0.08859653042434947,
+              0.026640054376534956,
+              0.9957117263728652
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9997116633834396,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.005671070368414742,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 10,
+          "panel": "back",
+          "sensor_angle_deg": 20.0,
+          "green_subtraction_sensor_axis": 0.0006243824248890088,
+          "relative_F_sensor_axis_green": 0.0006243824112972529,
+          "relative_F_sensor_transverse_green": -0.0009102483744163892,
+          "relative_F_sensor_shear_green": 0.0008038651284077124,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9966048544142408,
+              -0.009395012678044292,
+              -0.08886168954879088
+            ],
+            [
+              0.013348549634004921,
+              0.9986899140828257,
+              0.02572465926116514
+            ],
+            [
+              0.08859653042434958,
+              -0.026640054376534956,
+              0.995711726372865
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9997116633834394,
+          "movement_local_gap_mm": null,
+          "movement_local_pressure_kPa": null,
+          "movement_local_contact_active": false,
+          "reduced_analytical_sensor_axis_green": 0.00567107036841474,
+          "sign_vs_reduced_relative_F": false
+        }
+      ]
+    },
+    {
+      "label": "full garment with contact, coarse mesh",
+      "reference_case": "garment_mesh_0p6_coarse56_reference",
+      "movement_case": "garment_mesh_0p6_coarse56_movement025",
+      "contact_enabled": true,
+      "mesh": {
+        "circumferential_divisions": 56,
+        "vertical_divisions": 23,
+        "shirt_shell_elements": 1288,
+        "torso_fixed_shell_elements": 1288
+      },
+      "normal_termination": true,
+      "movement_contact_coverage": 0.7111801242236024,
+      "movement_minimum_signed_area_ratio": 0.990776109073869,
+      "rows": [
+        {
+          "sensor": 1,
+          "panel": "front",
+          "sensor_angle_deg": 15.0,
+          "green_subtraction_sensor_axis": -0.00220999279285406,
+          "relative_F_sensor_axis_green": -0.0022091025930656705,
+          "relative_F_sensor_transverse_green": 0.002969395370379102,
+          "relative_F_sensor_shear_green": -0.0036696128230351197,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9977578242555184,
+              0.00034922382818161743,
+              -0.001542313599521077
+            ],
+            [
+              -0.007664427529182277,
+              1.0029648833455,
+              0.0003330321561412081
+            ],
+            [
+              0.0015412661718987744,
+              -0.00033400482535538337,
+              0.9999987551782961
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0007199820754036,
+          "movement_local_gap_mm": -0.00168711960808,
+          "movement_local_pressure_kPa": 0.0037000919475599996,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694126,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 2,
+          "panel": "front",
+          "sensor_angle_deg": 165.0,
+          "green_subtraction_sensor_axis": -0.002209992792854257,
+          "relative_F_sensor_axis_green": -0.0022091025930657815,
+          "relative_F_sensor_transverse_green": 0.002969395370379102,
+          "relative_F_sensor_shear_green": 0.0036696128230350707,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9977578242555183,
+              -0.00034922382818164817,
+              -0.001542313599520971
+            ],
+            [
+              0.007664427529182211,
+              1.0029648833455,
+              -0.0003330321561411746
+            ],
+            [
+              0.0015412661718986753,
+              0.0003340048253553575,
+              0.999998755178296
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0007199820754031,
+          "movement_local_gap_mm": -0.00168711960809,
+          "movement_local_pressure_kPa": 0.0037000919475500002,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694113,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 3,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.005982481466553113,
+          "relative_F_sensor_axis_green": -0.005984454344476975,
+          "relative_F_sensor_transverse_green": 0.0035819952246922693,
+          "relative_F_sensor_shear_green": -0.0005219814695966599,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9939975267574985,
+              -0.0009709562058124386,
+              -4.432061607253272e-05
+            ],
+            [
+              -7.856152013383065e-05,
+              1.0035751185488015,
+              -0.0001700497449811398
+            ],
+            [
+              4.403532233980947e-05,
+              0.0001706551779972013,
+              0.9999999845594985
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9975511248825806,
+          "movement_local_gap_mm": 0.0134379207799,
+          "movement_local_pressure_kPa": 0.0134379207799,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 4,
+          "panel": "front",
+          "sensor_angle_deg": 0.0,
+          "green_subtraction_sensor_axis": 0.001734297146949726,
+          "relative_F_sensor_axis_green": 0.0017324131818854394,
+          "relative_F_sensor_transverse_green": -0.0021065180805024397,
+          "relative_F_sensor_shear_green": 0.00021663777645439936,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.0017308676668237,
+              0.0001362595019214717,
+              8.15466975423518e-05
+            ],
+            [
+              0.0002974032925276457,
+              0.9978912479839036,
+              4.978519445570785e-05
+            ],
+            [
+              -8.172224344351139e-05,
+              -4.9693768161988655e-05,
+              0.9999999954358407
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9996184297202656,
+          "movement_local_gap_mm": 0.0108431319607,
+          "movement_local_pressure_kPa": 0.0108431319607,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.0033125000000000003,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 5,
+          "panel": "front",
+          "sensor_angle_deg": 55.0,
+          "green_subtraction_sensor_axis": -0.00037375082025728793,
+          "relative_F_sensor_axis_green": -0.0003736111725942681,
+          "relative_F_sensor_transverse_green": 0.0003875652486883263,
+          "relative_F_sensor_shear_green": 0.00013365278722532784,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9996263111760582,
+              0.00017814501179181193,
+              -8.784317019315435e-05
+            ],
+            [
+              8.920391046211695e-05,
+              1.000387465967044,
+              0.00012915742950132141
+            ],
+            [
+              8.77611554735192e-05,
+              -0.00012921984328652074,
+              0.9999999878010069
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0000136286597128,
+          "movement_local_gap_mm": 0.00393641365187,
+          "movement_local_pressure_kPa": 0.00393641365187,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.003311690686408836,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 6,
+          "panel": "front",
+          "sensor_angle_deg": 105.0,
+          "green_subtraction_sensor_axis": -0.0001987362104354905,
+          "relative_F_sensor_axis_green": -0.00019866009020286235,
+          "relative_F_sensor_transverse_green": 0.0002126141662972536,
+          "relative_F_sensor_shear_green": -0.0003470213611542261,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9998012736599009,
+              -0.0003915015631476382,
+              -3.8371136267359696e-05
+            ],
+            [
+              -0.00030256046181787133,
+              1.0002125034832015,
+              -0.0001514124170818189
+            ],
+            [
+              3.827272086873451e-05,
+              0.00015144301616893424,
+              0.9999999878010071
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0000136286597132,
+          "movement_local_gap_mm": 0.00393641365187,
+          "movement_local_pressure_kPa": 0.00393641365187,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.004948026870717748,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 7,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.0001792904193639866,
+          "relative_F_sensor_axis_green": -0.00017934946936559726,
+          "relative_F_sensor_transverse_green": 0.0001940554436374864,
+          "relative_F_sensor_shear_green": -2.8542595926437102e-05,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9998206341621603,
+              -3.5083054267564186e-05,
+              8.98246238552058e-06
+            ],
+            [
+              -2.200408220089356e-05,
+              1.0001940359650503,
+              -8.736393440943752e-06
+            ],
+            [
+              -8.981367468861318e-06,
+              8.740597076145302e-06,
+              0.9999999999215019
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0000146346303511,
+          "movement_local_gap_mm": 0.0042352165472,
+          "movement_local_pressure_kPa": 0.004235216547200001,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.003135000000006535,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 8,
+          "panel": "back",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.005982481466553113,
+          "relative_F_sensor_axis_green": -0.005984454344476975,
+          "relative_F_sensor_transverse_green": 0.0035819952246924913,
+          "relative_F_sensor_shear_green": -0.0005219814695966356,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9939975267574985,
+              -0.00097095620581244,
+              -4.4320616072530226e-05
+            ],
+            [
+              -7.856152013378081e-05,
+              1.0035751185488018,
+              -0.00017004974498114684
+            ],
+            [
+              4.4035322339807035e-05,
+              0.0001706551779971873,
+              0.999999984559498
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9975511248825804,
+          "movement_local_gap_mm": 0.0134379207799,
+          "movement_local_pressure_kPa": 0.0134379207799,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 9,
+          "panel": "back",
+          "sensor_angle_deg": 160.0,
+          "green_subtraction_sensor_axis": 0.0012040357869545167,
+          "relative_F_sensor_axis_green": 0.001203401135395521,
+          "relative_F_sensor_transverse_green": -0.0010702882220218202,
+          "relative_F_sensor_shear_green": -0.0010398510914930977,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.001201457351329,
+              -0.0006811669189454426,
+              0.0006964002494948051
+            ],
+            [
+              -0.0013993672169722872,
+              0.9989288825289624,
+              0.0002181590928258495
+            ],
+            [
+              -0.0006970220642442527,
+              -0.00021729478456556622,
+              0.9999997337175269
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0001283661226301,
+          "movement_local_gap_mm": 0.00599445624375,
+          "movement_local_pressure_kPa": 0.00599445624375,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.005671070368414742,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 10,
+          "panel": "back",
+          "sensor_angle_deg": 20.0,
+          "green_subtraction_sensor_axis": 0.001204035786954516,
+          "relative_F_sensor_axis_green": 0.001203401135395521,
+          "relative_F_sensor_transverse_green": -0.0010702882220219312,
+          "relative_F_sensor_shear_green": 0.0010398510914930974,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.001201457351329,
+              0.0006811669189454419,
+              0.0006964002494948562
+            ],
+            [
+              0.0013993672169722875,
+              0.9989288825289623,
+              -0.00021815909282587196
+            ],
+            [
+              -0.000697022064244254,
+              0.0002172947845655639,
+              0.9999997337175269
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.00012836612263,
+          "movement_local_gap_mm": 0.00599445624375,
+          "movement_local_pressure_kPa": 0.00599445624375,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.00567107036841474,
+          "sign_vs_reduced_relative_F": false
+        }
+      ]
+    },
+    {
+      "label": "full garment with contact, current mesh",
+      "reference_case": "garment_fit_torso_expand_060mm_manual",
+      "movement_case": "garment_both_arms_raise_025",
+      "contact_enabled": true,
+      "mesh": {
+        "circumferential_divisions": 64,
+        "vertical_divisions": 26,
+        "shirt_shell_elements": 1664,
+        "torso_fixed_shell_elements": 1664
+      },
+      "normal_termination": true,
+      "movement_contact_coverage": 0.7283653846153846,
+      "movement_minimum_signed_area_ratio": 0.9902962503710246,
+      "rows": [
+        {
+          "sensor": 1,
+          "panel": "front",
+          "sensor_angle_deg": 15.0,
+          "green_subtraction_sensor_axis": -0.002397637978699652,
+          "relative_F_sensor_axis_green": -0.002396667994286339,
+          "relative_F_sensor_transverse_green": 0.0032050743992348973,
+          "relative_F_sensor_shear_green": -0.003969399839603792,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9975590423871087,
+              0.0010110410002800543,
+              -0.0017580879139586763
+            ],
+            [
+              -0.008918013667626812,
+              1.0031993346525503,
+              0.00047039437311501285
+            ],
+            [
+              0.001757838265049239,
+              -0.0004706880558603979,
+              0.9999983439265038
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0007612413917755,
+          "movement_local_gap_mm": 0.00135454943456,
+          "movement_local_pressure_kPa": 0.00526583297802,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694126,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 2,
+          "panel": "front",
+          "sensor_angle_deg": 165.0,
+          "green_subtraction_sensor_axis": -0.00239763797869966,
+          "relative_F_sensor_axis_green": -0.002396667994286561,
+          "relative_F_sensor_transverse_green": 0.0032050743992351194,
+          "relative_F_sensor_shear_green": 0.003969399839603742,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9975590423871085,
+              -0.0010110410002800794,
+              -0.0017580879139587609
+            ],
+            [
+              0.008918013667626734,
+              1.0031993346525505,
+              -0.0004703943731150137
+            ],
+            [
+              0.0017578382650490735,
+              0.00047068805586035386,
+              0.9999983439265036
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0007612413917752,
+          "movement_local_gap_mm": 0.00135454943455,
+          "movement_local_pressure_kPa": 0.00526583297802,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694113,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 3,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.005773490241969437,
+          "relative_F_sensor_axis_green": -0.00577539369396346,
+          "relative_F_sensor_transverse_green": 0.0035174839482960962,
+          "relative_F_sensor_shear_green": -0.0004434290922433941,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9942078202689374,
+              -0.0008146324105490012,
+              -0.00013056472404147487
+            ],
+            [
+              -7.669403131435077e-05,
+              1.0035109779027138,
+              -0.00014618481708702567
+            ],
+            [
+              0.00012979286142707666,
+              0.00014662662430492903,
+              0.9999999807915124
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9976984186481117,
+          "movement_local_gap_mm": 0.01372255593,
+          "movement_local_pressure_kPa": 0.01372255593,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 4,
+          "panel": "front",
+          "sensor_angle_deg": 0.0,
+          "green_subtraction_sensor_axis": 0.0015535163704929467,
+          "relative_F_sensor_axis_green": 0.0015518285247791974,
+          "relative_F_sensor_transverse_green": -0.0018527624361839856,
+          "relative_F_sensor_shear_green": 0.0001696807583768527,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.0015505984318631,
+              0.000112089252265816,
+              6.364174968850597e-05
+            ],
+            [
+              0.00022751732075434032,
+              0.99814551055977,
+              4.817426240683621e-05
+            ],
+            [
+              -6.376679481430634e-05,
+              -4.8093738666150024e-05,
+              0.9999999968145225
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9996932111066053,
+          "movement_local_gap_mm": 0.0100572390064,
+          "movement_local_pressure_kPa": 0.010057239006400001,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.0033125000000000003,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 5,
+          "panel": "front",
+          "sensor_angle_deg": 55.0,
+          "green_subtraction_sensor_axis": -0.0003899432211688444,
+          "relative_F_sensor_axis_green": -0.0003897935342353498,
+          "relative_F_sensor_transverse_green": 0.0004056599376596193,
+          "relative_F_sensor_shear_green": 0.0001453993520774868,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9996101210208157,
+              0.0001896165873474545,
+              -9.302687050008967e-05
+            ],
+            [
+              0.00010122769195934224,
+              1.0004055503871514,
+              0.00013659129688635278
+            ],
+            [
+              9.293671929795648e-05,
+              -0.00013665814838571014,
+              0.9999999863444348
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0000155077540183,
+          "movement_local_gap_mm": 0.00392688208544,
+          "movement_local_pressure_kPa": 0.00392688208544,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.003311690686408836,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 6,
+          "panel": "front",
+          "sensor_angle_deg": 105.0,
+          "green_subtraction_sensor_axis": -0.0002033643819750693,
+          "relative_F_sensor_axis_green": -0.0002032822522685107,
+          "relative_F_sensor_transverse_green": 0.00021914865569216957,
+          "relative_F_sensor_shear_green": -0.00036703618360021603,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9997966441305393,
+              -0.00041124034021286407,
+              -4.069968880563917e-05
+            ],
+            [
+              -0.0003228514448245842,
+              1.0002190272774274,
+              -0.0001601708973292924
+            ],
+            [
+              4.059210982685444e-05,
+              0.00016020288366287548,
+              0.9999999863444345
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0000155077540176,
+          "movement_local_gap_mm": 0.00392688208544,
+          "movement_local_pressure_kPa": 0.00392688208544,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.004948026870717748,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 7,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.00014683440485530053,
+          "relative_F_sensor_axis_green": -0.00014688276582497384,
+          "relative_F_sensor_transverse_green": 0.0001690253278722187,
+          "relative_F_sensor_shear_green": -2.1785153310475147e-05,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9998531062957061,
+              -2.7792637259856664e-05,
+              7.085874220004486e-06
+            ],
+            [
+              -1.577903813879948e-05,
+              1.000169010637394,
+              -6.625010785680579e-06
+            ],
+            [
+              -7.085155597882476e-06,
+              6.628004056732816e-06,
+              0.9999999999529539
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0000220917150282,
+          "movement_local_gap_mm": 0.00412018552087,
+          "movement_local_pressure_kPa": 0.00412018552087,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.003135000000006535,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 8,
+          "panel": "back",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.005773490241969437,
+          "relative_F_sensor_axis_green": -0.00577539369396346,
+          "relative_F_sensor_transverse_green": 0.003517483948295874,
+          "relative_F_sensor_shear_green": -0.0004434290922433612,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9942078202689374,
+              -0.0008146324105490019,
+              -0.00013056472404147232
+            ],
+            [
+              -7.669403131428448e-05,
+              1.0035109779027136,
+              -0.0001461848170870248
+            ],
+            [
+              0.00012979286142707384,
+              0.0001466266243049506,
+              0.9999999807915126
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9976984186481117,
+          "movement_local_gap_mm": 0.01372255593,
+          "movement_local_pressure_kPa": 0.01372255593,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 9,
+          "panel": "back",
+          "sensor_angle_deg": 160.0,
+          "green_subtraction_sensor_axis": 0.0013416549168364812,
+          "relative_F_sensor_axis_green": 0.0013409468799653324,
+          "relative_F_sensor_transverse_green": -0.0011797914988580516,
+          "relative_F_sensor_shear_green": -0.001156923752336367,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.001338457912111,
+              -0.0007096393132568996,
+              0.0007798476926680052
+            ],
+            [
+              -0.0016053470764175667,
+              0.998819228980653,
+              0.00024847369053054554
+            ],
+            [
+              -0.0007805939343963298,
+              -0.00024745266772786904,
+              0.9999996650501783
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0001553023021221,
+          "movement_local_gap_mm": 0.00616668444248,
+          "movement_local_pressure_kPa": 0.00616668444248,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.005671070368414742,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 10,
+          "panel": "back",
+          "sensor_angle_deg": 20.0,
+          "green_subtraction_sensor_axis": 0.0013416549168366763,
+          "relative_F_sensor_axis_green": 0.0013409468799655544,
+          "relative_F_sensor_transverse_green": -0.0011797914988580516,
+          "relative_F_sensor_shear_green": 0.0011569237523362842,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.0013384579121112,
+              0.0007096393132568433,
+              0.0007798476926680558
+            ],
+            [
+              0.0016053470764174572,
+              0.998819228980653,
+              -0.00024847369053056765
+            ],
+            [
+              -0.0007805939343963836,
+              0.0002474526677278862,
+              0.9999996650501781
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0001553023021221,
+          "movement_local_gap_mm": 0.00616668444246,
+          "movement_local_pressure_kPa": 0.00616668444246,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.00567107036841474,
+          "sign_vs_reduced_relative_F": false
+        }
+      ]
+    },
+    {
+      "label": "full garment with contact, fine mesh",
+      "reference_case": "garment_mesh_0p6_fine72_reference",
+      "movement_case": "garment_mesh_0p6_fine72_movement025",
+      "contact_enabled": true,
+      "mesh": {
+        "circumferential_divisions": 72,
+        "vertical_divisions": 30,
+        "shirt_shell_elements": 2160,
+        "torso_fixed_shell_elements": 2160
+      },
+      "normal_termination": true,
+      "movement_contact_coverage": 0.7351851851851852,
+      "movement_minimum_signed_area_ratio": 0.9895498542770031,
+      "rows": [
+        {
+          "sensor": 1,
+          "panel": "front",
+          "sensor_angle_deg": 15.0,
+          "green_subtraction_sensor_axis": -0.002661911014050399,
+          "relative_F_sensor_axis_green": -0.002660453056264056,
+          "relative_F_sensor_transverse_green": 0.003979220927613714,
+          "relative_F_sensor_shear_green": -0.0033279540286790107,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9973027402408702,
+              0.0013972159291062941,
+              -0.0014384808654357775
+            ],
+            [
+              -0.008017102880045394,
+              1.0039703199683356,
+              0.00029403646797134306
+            ],
+            [
+              0.0014367522173660814,
+              -0.00029370998045556766,
+              0.9999989221550615
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.001274631908912,
+          "movement_local_gap_mm": -0.0027302729966,
+          "movement_local_pressure_kPa": 0.00189221567872,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694126,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 2,
+          "panel": "front",
+          "sensor_angle_deg": 165.0,
+          "green_subtraction_sensor_axis": -0.0026619110140504005,
+          "relative_F_sensor_axis_green": -0.002660453056264167,
+          "relative_F_sensor_transverse_green": 0.0039792209276134916,
+          "relative_F_sensor_shear_green": 0.003327954028678982,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9973027402408701,
+              -0.0013972159291063494,
+              -0.0014384808654357773
+            ],
+            [
+              0.008017102880045394,
+              1.0039703199683354,
+              -0.00029403646797134344
+            ],
+            [
+              0.0014367522173660812,
+              0.00029370998045556804,
+              0.9999989221550615
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0012746319089116,
+          "movement_local_gap_mm": -0.00273027299659,
+          "movement_local_pressure_kPa": 0.00189221567872,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.0028809052677694113,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 3,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.005795382933435678,
+          "relative_F_sensor_axis_green": -0.005797293774656209,
+          "relative_F_sensor_transverse_green": 0.0034895720097971594,
+          "relative_F_sensor_shear_green": -0.00039558837649359107,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9941857963980375,
+              -0.0007331223324766621,
+              -0.00010470158694727977
+            ],
+            [
+              -6.211409029229662e-05,
+              1.0034832284176287,
+              -0.0001293485012010133
+            ],
+            [
+              0.0001040813489204628,
+              0.00012975273853525366,
+              0.999999986153338
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9976487408970177,
+          "movement_local_gap_mm": 0.0143715409144,
+          "movement_local_pressure_kPa": 0.0143715409144,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 4,
+          "panel": "front",
+          "sensor_angle_deg": 0.0,
+          "green_subtraction_sensor_axis": 0.00153826187295647,
+          "relative_F_sensor_axis_green": 0.0015365904248630935,
+          "relative_F_sensor_transverse_green": -0.001836706031171198,
+          "relative_F_sensor_shear_green": 0.0001496239189799812,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.0015353900062245,
+              9.877642549601515e-05,
+              5.592618944146219e-05
+            ],
+            [
+              0.00020068605033594686,
+              0.9981615981169929,
+              4.7254255106496066e-05
+            ],
+            [
+              -5.603494547653317e-05,
+              -4.717420980129877e-05,
+              0.9999999973196774
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9996941483166588,
+          "movement_local_gap_mm": 0.00993471988798,
+          "movement_local_pressure_kPa": 0.00993471988798,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.0033125000000000003,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 5,
+          "panel": "front",
+          "sensor_angle_deg": 55.0,
+          "green_subtraction_sensor_axis": -0.00047144636698157033,
+          "relative_F_sensor_axis_green": -0.000471263920701237,
+          "relative_F_sensor_transverse_green": 0.0004943423811049064,
+          "relative_F_sensor_shear_green": 0.0001779706560598259,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9995286104887138,
+              0.00023016476253930835,
+              -0.00011474016951560352
+            ],
+            [
+              0.00012584232738208716,
+              1.0004941793595235,
+              0.00016977194388111466
+            ],
+            [
+              0.00011461591172824912,
+              -0.00016986496262187326,
+              0.9999999790061227
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.000022548927641,
+          "movement_local_gap_mm": 0.00396313751278,
+          "movement_local_pressure_kPa": 0.00396313751278,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.003311690686408836,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 6,
+          "panel": "front",
+          "sensor_angle_deg": 105.0,
+          "green_subtraction_sensor_axis": -0.00024401288187501425,
+          "relative_F_sensor_axis_green": -0.00024391210806479213,
+          "relative_F_sensor_transverse_green": 0.00026699056846835045,
+          "relative_F_sensor_shear_green": -0.00044667331543113377,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9997559790633335,
+              -0.0004988476972791727,
+              -4.975506602264038e-05
+            ],
+            [
+              -0.000394525262121869,
+              1.0002668107849038,
+              -0.00019877689210450115
+            ],
+            [
+              4.96064876136994e-05,
+              0.00019882180246238545,
+              0.9999999790061226
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0000225489276413,
+          "movement_local_gap_mm": 0.00396313751278,
+          "movement_local_pressure_kPa": 0.00396313751278,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.004948026870717748,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 7,
+          "panel": "front",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.00016357749406148425,
+          "relative_F_sensor_axis_green": -0.0001636313661663169,
+          "relative_F_sensor_transverse_green": 0.0001826809266559648,
+          "relative_F_sensor_shear_green": -2.0965862357247277e-05,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9998363550902556,
+              -2.6288509785261506e-05,
+              7.922245238047388e-06
+            ],
+            [
+              -1.5644608772160572e-05,
+              1.0001826638777989,
+              -6.363846186227272e-06
+            ],
+            [
+              -7.921232255434207e-06,
+              6.366809734867779e-06,
+              0.9999999999483733
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0000189887164135,
+          "movement_local_gap_mm": 0.0041725226925,
+          "movement_local_pressure_kPa": 0.0041725226925,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.003135000000006535,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 8,
+          "panel": "back",
+          "sensor_angle_deg": 90.0,
+          "green_subtraction_sensor_axis": -0.005795382933435678,
+          "relative_F_sensor_axis_green": -0.005797293774656209,
+          "relative_F_sensor_transverse_green": 0.0034895720097969374,
+          "relative_F_sensor_shear_green": -0.0003955883764935821,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              0.9941857963980375,
+              -0.0007331223324766627,
+              -0.00010470158694727905
+            ],
+            [
+              -6.21140902922781e-05,
+              1.0034832284176285,
+              -0.00012934850120102016
+            ],
+            [
+              0.0001040813489204621,
+              0.00012975273853525375,
+              0.9999999861533377
+            ]
+          ],
+          "det_relative_deformation_gradient": 0.9976487408970173,
+          "movement_local_gap_mm": 0.0143715409144,
+          "movement_local_pressure_kPa": 0.0143715409144,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.012539999999896035,
+          "sign_vs_reduced_relative_F": true
+        },
+        {
+          "sensor": 9,
+          "panel": "back",
+          "sensor_angle_deg": 160.0,
+          "green_subtraction_sensor_axis": 0.001313465896046027,
+          "relative_F_sensor_axis_green": 0.0013127846135484456,
+          "relative_F_sensor_transverse_green": -0.0011493724552564255,
+          "relative_F_sensor_shear_green": -0.0011587612954072266,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.00131035730441,
+              -0.0007170581680232498,
+              0.0007560158599884882
+            ],
+            [
+              -0.0016015525143169694,
+              0.9988496788266447,
+              0.00024599885153006005
+            ],
+            [
+              -0.0007567110120704341,
+              -0.00024499995838013055,
+              0.9999996839632057
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0001576965127126,
+          "movement_local_gap_mm": 0.00582709963054,
+          "movement_local_pressure_kPa": 0.00582709963054,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.005671070368414742,
+          "sign_vs_reduced_relative_F": false
+        },
+        {
+          "sensor": 10,
+          "panel": "back",
+          "sensor_angle_deg": 20.0,
+          "green_subtraction_sensor_axis": 0.001313465896046224,
+          "relative_F_sensor_axis_green": 0.0013127846135486676,
+          "relative_F_sensor_transverse_green": -0.0011493724552564255,
+          "relative_F_sensor_shear_green": 0.00115876129540717,
+          "relative_deformation_gradient_sensor_basis": [
+            [
+              1.0013103573044102,
+              0.0007170581680231942,
+              0.0007560158599887252
+            ],
+            [
+              0.0016015525143169118,
+              0.9988496788266447,
+              -0.000245998851530149
+            ],
+            [
+              -0.0007567110120701733,
+              0.00024499995838003357,
+              0.9999996839632055
+            ]
+          ],
+          "det_relative_deformation_gradient": 1.0001576965127126,
+          "movement_local_gap_mm": 0.00582709963054,
+          "movement_local_pressure_kPa": 0.00582709963054,
+          "movement_local_contact_active": true,
+          "reduced_analytical_sensor_axis_green": 0.00567107036841474,
+          "sign_vs_reduced_relative_F": false
+        }
+      ]
+    }
+  ]
+}

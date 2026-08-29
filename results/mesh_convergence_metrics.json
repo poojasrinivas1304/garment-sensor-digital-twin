@@ -1,0 +1,8 @@
+{
+  "refinement_ratio": 2.0,
+  "apparent_order": 0.9261416319648966,
+  "richardson_extrapolated_gauge_strain": 0.20932630944096448,
+  "fine_grid_convergence_index_percent": 5.305611973966986,
+  "status": "not paper-ready",
+  "recommended_action": "Use local refinement at the two printed-patch ends and repeat until GCI is below 2%."
+}

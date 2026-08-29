@@ -1,0 +1,59 @@
+{
+  "definition": "F_rel = F_move @ inverse(F_fit)",
+  "rotation": "proper orthogonal factor from an SVD polar decomposition",
+  "principal_stretches": "singular values of F_rel in descending order",
+  "rows": [
+    {
+      "state": "full garment, no contact",
+      "sensor": "S3",
+      "det_F_fit": 1.000000002738958,
+      "det_F_move": 0.9972270999653247,
+      "det_F_rel": 0.9972270972339615,
+      "principal_stretch_1": 1.000392391186167,
+      "principal_stretch_2": 1.0,
+      "principal_stretch_3": 0.9968359475940713,
+      "polar_rotation_deg": 1.5504741315741069,
+      "relative_axis_green_percent": -0.31528485956066055,
+      "mirror_pair_absolute_difference_percentage_points": 0.0
+    },
+    {
+      "state": "full garment, no contact",
+      "sensor": "S9",
+      "det_F_fit": 1.0000000122745956,
+      "det_F_move": 0.9997130038742075,
+      "det_F_rel": 0.9997129916031348,
+      "principal_stretch_1": 1.0010751062370409,
+      "principal_stretch_2": 1.0000000000000002,
+      "principal_stretch_3": 0.9986393482113185,
+      "polar_rotation_deg": 4.928262479211505,
+      "relative_axis_green_percent": 0.07083718163367614,
+      "mirror_pair_absolute_difference_percentage_points": 5.551115123125783e-14
+    },
+    {
+      "state": "full garment, contact",
+      "sensor": "S3",
+      "det_F_fit": 1.000378801900344,
+      "det_F_move": 0.9980763487050657,
+      "det_F_rel": 0.9976984186481117,
+      "principal_stretch_1": 1.0035323563646354,
+      "principal_stretch_2": 0.9999999999999998,
+      "principal_stretch_3": 0.9941865972935269,
+      "polar_rotation_deg": 0.023959706705931057,
+      "relative_axis_green_percent": -0.577539369396346,
+      "mirror_pair_absolute_difference_percentage_points": 0.0
+    },
+    {
+      "state": "full garment, contact",
+      "sensor": "S9",
+      "det_F_fit": 1.0003781465850954,
+      "det_F_move": 1.0005335076142525,
+      "det_F_rel": 1.0001553023021221,
+      "principal_stretch_1": 1.001789824596026,
+      "principal_stretch_2": 1.0,
+      "principal_stretch_3": 0.9983683979875091,
+      "polar_rotation_deg": 0.05345663081392887,
+      "relative_axis_green_percent": 0.13409468799653324,
+      "mirror_pair_absolute_difference_percentage_points": 2.220446049250313e-14
+    }
+  ]
+}

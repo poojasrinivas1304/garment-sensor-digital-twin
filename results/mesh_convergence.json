@@ -1,0 +1,50 @@
+[
+  {
+    "final_gauge_length_mm": 99.426311665525,
+    "nominal_coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.24282889581906258,
+    "strain_transfer_ratio": 0.8094296527302086,
+    "provisional_piezoresistive_beta": 4.0,
+    "predicted_delta_R_over_R0": 3.0799954816076234,
+    "warning": "Material constants and electrical beta are provisional verification assumptions.",
+    "case_name": "coupon_mesh_coarse",
+    "mesh_level": "coarse",
+    "material_case": "provisional",
+    "node_count": 462,
+    "element_count": 264,
+    "wall_time_seconds": 0.0,
+    "relative_error_vs_fine_percent": 11.081138946070949
+  },
+  {
+    "final_gauge_length_mm": 98.15660092493333,
+    "nominal_coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.2269575115616666,
+    "strain_transfer_ratio": 0.7565250385388887,
+    "provisional_piezoresistive_beta": 4.0,
+    "predicted_delta_R_over_R0": 2.731853849202234,
+    "warning": "Material constants and electrical beta are provisional verification assumptions.",
+    "case_name": "coupon_mesh_medium",
+    "mesh_level": "medium",
+    "material_case": "provisional",
+    "node_count": 2601,
+    "element_count": 1920,
+    "wall_time_seconds": 0.0,
+    "relative_error_vs_fine_percent": 3.8208356200782014
+  },
+  {
+    "final_gauge_length_mm": 97.48839798532885,
+    "nominal_coupon_strain": 0.3,
+    "mean_conductive_gauge_strain": 0.21860497481661056,
+    "strain_transfer_ratio": 0.7286832493887019,
+    "provisional_piezoresistive_beta": 4.0,
+    "predicted_delta_R_over_R0": 2.560259308653948,
+    "warning": "Material constants and electrical beta are provisional verification assumptions.",
+    "case_name": "coupon_mesh_fine",
+    "mesh_level": "fine",
+    "material_case": "provisional",
+    "node_count": 13893,
+    "element_count": 11520,
+    "wall_time_seconds": 0.0,
+    "relative_error_vs_fine_percent": 0.0
+  }
+]

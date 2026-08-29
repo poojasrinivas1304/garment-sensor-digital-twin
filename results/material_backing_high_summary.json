@@ -1,0 +1,14 @@
+{
+  "final_gauge_length_mm": 80.55128275792856,
+  "nominal_coupon_strain": 0.3,
+  "mean_conductive_gauge_strain": 0.0068910344741070165,
+  "strain_transfer_ratio": 0.022970114913690057,
+  "provisional_piezoresistive_beta": 4.0,
+  "predicted_delta_R_over_R0": 0.04216360078726611,
+  "warning": "Material constants and electrical beta are provisional verification assumptions.",
+  "case_name": "material_backing_high",
+  "mesh_level": "medium",
+  "material_case": "backing_high",
+  "node_count": 2601,
+  "element_count": 1920
+}
