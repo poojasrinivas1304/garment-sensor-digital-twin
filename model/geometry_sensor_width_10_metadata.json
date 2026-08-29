@@ -1,0 +1,80 @@
+{
+  "units": {
+    "length": "mm",
+    "stress": "MPa"
+  },
+  "case_name": "geometry_sensor_width_10",
+  "mesh_level": "coarse",
+  "material_case": "literature_nominal",
+  "target_in_plane_spacing_mm": {
+    "x": 10.0,
+    "y": 5.0
+  },
+  "through_thickness_element_counts": {
+    "nylon": 2,
+    "backing_tpu": 1,
+    "conductive_tpu": 1
+  },
+  "nominal_coupon_length_mm": 120.0,
+  "nominal_coupon_width_mm": 40.0,
+  "textile_thickness_mm": 1.6,
+  "prescribed_displacement_mm": 36.0,
+  "nominal_coupon_strain": 0.3,
+  "initial_gauge_length_mm": 80.0,
+  "sensor_width_mm": 10.0,
+  "backing_thickness_mm": 0.4,
+  "conductive_thickness_mm": 0.6,
+  "gauge_left_node_ids": [
+    352,
+    355,
+    371,
+    379,
+    382,
+    398
+  ],
+  "gauge_right_node_ids": [
+    368,
+    369,
+    378,
+    395,
+    396,
+    405
+  ],
+  "node_count": 405,
+  "element_count": 224,
+  "element_count_by_domain": {
+    "nylon_substrate": 192,
+    "tpu_backing": 16,
+    "conductive_tpu": 16
+  },
+  "materials": {
+    "nylon": {
+      "E_MPa": 0.24,
+      "nu": 0.35
+    },
+    "backing_tpu": {
+      "E_MPa": 48.4,
+      "nu": 0.45
+    },
+    "conductive_tpu": {
+      "E_MPa": 45.0,
+      "nu": 0.45
+    }
+  },
+  "material_identities": {
+    "nylon": {
+      "product": "shirt textile; exact composition and knit structure still unknown",
+      "status": "unidentified"
+    },
+    "backing_tpu": {
+      "product": "Luocute white flexible TPU filament, 1.75 mm, Shore 95A",
+      "asin": "B0D5MMNBRY",
+      "status": "product identified; constitutive curve unavailable"
+    },
+    "conductive_tpu": {
+      "product": "Graphene 3D Lab conductive flexible TPU filament, 1.75 mm, Shore 90A",
+      "manufacturer_volume_resistivity_upper_bound_ohm_cm": 1.25,
+      "status": "product identified; printed resistance-strain curve unavailable"
+    }
+  }
+}
