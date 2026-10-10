@@ -1,5 +1,7 @@
 # Multiscale Simulation of Strain Transfer in 3D-Printed TPU Smart Garments
 
+> **Current access:** This repository and [release v1.1.0](https://github.com/poojasrinivas1304/garment-sensor-digital-twin/releases/tag/v1.1.0) are public. Download the attached `Supplementary_Data_1_reproducibility.zip` for the revised manuscript. The files on the main branch below describe the earlier package; see [README_CURRENT.txt](README_CURRENT.txt) for the revision addendum and current access statement.
+
 > FEBio models, Python analysis code and reproducibility records accompanying
 > the manuscript *Full-garment mechanics can reverse reduced-model strain
 > predictions in directly printed TPU smart garments*.
@@ -206,9 +208,13 @@ python3 scripts/plot_numerical_remediation.py
 
 ## Data Access
 
-The repository is private during manuscript review. This paper-only archive and
-the retained full solver records are available from the corresponding authors
-on reasonable request. Repository access may be opened after publication.
+This repository and release v1.1.0 are publicly accessible without a GitHub
+account. The revised manuscript data and code are provided in the attached
+`Supplementary_Data_1_reproducibility.zip` on the release page. The earlier
+private-review statement is historical and is superseded by this statement
+and `README_CURRENT.txt`. Additional large raw solver logs and FEBio plot
+files not included in the release asset are available from the corresponding
+authors on reasonable request.
 
 ---
 
