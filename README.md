@@ -247,7 +247,5 @@ and Technology.
 
 ## Authors
 
-- **Pooja Gurram** — sensor-system development, computational workflow,
-  analysis, visualization and manuscript preparation
-- **Mohamed Elgendi** — supervision, conceptualization, interpretation and
-  critical manuscript revision
+- **Pooja Gurram** — pooja.sgurram@ku.ac.ae
+- **Mohamed Elgendi** — mohamed.elgendi@ku.ac.ae
